@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Input Form Create User Account</title>
+    <link href="../../dist/output.css" rel="stylesheet">
+</head>
+
+<body class="bg-whiteLayer-1 font-normal flex flex-col justify-center items-center gap-2 m-5 font-poppins">
+    <!-- Form Input Container -->
+    <div class="form-input flex flex-col items-end flex-grow self-stretch rounded-3xl bg-whiteLayer-2">
+        <!-- Remove Button -->
+        <button type="button" aria-label="Remove"
+            class="remove-button flex p-3 items-center flex-col justify-center rounded-tr-3xl rounded-bl-3xl bg-blackLayer-0">
+            <div class="icon-container flex p-2 flex-col justify-center items-center">
+                <div class="icon w-6 h-6 flex-shrink-0">
+                    <!-- file SVG -->
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="25" viewBox="0 0 24 25" fill="none">
+                        <path d="M17.6569 18.1569L6.34319 6.84315" stroke="#FFF0D1" stroke-linecap="round" />
+                        <path d="M17.6568 6.84315L6.34311 18.1569" stroke="#FFF0D1" stroke-linecap="round" />
+                    </svg>
+                </div>
+            </div>
+        </button>
+
+        <!-- Input Form Container -->
+        <div class="input-form-container flex px-6 justify-between items-center flex-grow self-stretch">
+            <form action="create-user-account"
+                class="form-container flex flex-col items-center gap-5 flex-grow self-stretch">
+
+                <div class="text-container flex flex-col items-center self-stretch">
+                    <h2 class="text-tl-lg text-secondary font-semibold">Create User Account</h2>
+                </div>
+
+                <div class="flex flex-col px-6 justify-between items-center flex-[1_0_0] self-stretch">
+                    <!-- container-validation -->
+                    <div class="flex flex-col justify-between items-center flex-[1_0_0]"> <!-- container-data -->
+
+                        <div class="flex justify-center items-center self-stretch"> <!-- container-box -->
+                            <div class="flex w-[130px] py-1 items-center gap-2.5 text-secondary">
+                                <!-- label-container -->
+                                <h4 class="text-tl-sm">Nama</h4>
+                            </div>
+                            <div
+                                class="flex w-[25px] py-1 px-4 pl-0 flex-col justify-center items-start gap-2.5 text-secondary">
+                                <!-- colon-container -->
+                                <h4 class="text-tl-sm">:</h4>
+                            </div>
+                            <div class="flex py-1 items-center gap-2.5 flex-[1_0_0] text-secondary">
+                                <!-- value-container -->
+                                <h4 class="text-tl-sm">Ardiansyah</h4>
+                            </div>
+                        </div>
+
+                        <div class="flex justify-center items-center self-stretch"> <!-- container-box -->
+                            <div class="flex w-[130px] py-1 items-center gap-2.5 text-secondary">
+                                <!-- label-container -->
+                                <h4 class="text-tl-sm">NIM</h4>
+                            </div>
+                            <div
+                                class="flex w-[25px] py-1 px-4 pl-0 flex-col justify-center items-start gap-2.5 text-secondary">
+                                <!-- colon-container -->
+                                <h4 class="text-tl-sm">:</h4>
+                            </div>
+                            <div class="flex py-1 items-center gap-2.5 flex-[1_0_0] text-secondary">
+                                <!-- value-container -->
+                                <h4 class="text-tl-sm">230210501014</h4>
+                            </div>
+                        </div>
+
+                        <div class="flex justify-center items-center self-stretch"> <!-- container-box -->
+                            <div class="flex w-[130px] py-1 items-center gap-2.5 text-secondary">
+                                <!-- label-container -->
+                                <h4 class="text-tl-sm">Prodi</h4>
+                            </div>
+                            <div
+                                class="flex w-[25px] py-1 px-4 pl-0 flex-col justify-center items-start gap-2.5 text-secondary">
+                                <!-- colon-container -->
+                                <h4 class="text-tl-sm">:</h4>
+                            </div>
+                            <div class="flex py-1 items-center gap-2.5 flex-[1_0_0] text-secondary">
+                                <!-- value-container -->
+                                <h4 class="text-tl-sm">JTIK</h4>
+                            </div>
+                        </div>
+
+                        <div class="flex justify-center items-center self-stretch"> <!-- container-box -->
+                            <div class="flex w-[130px] py-1 items-center gap-2.5 text-secondary">
+                                <!-- label-container -->
+                                <h4 class="text-tl-sm">Kelas</h4>
+                            </div>
+                            <div
+                                class="flex w-[25px] py-1 px-4 pl-0 flex-col justify-center items-start gap-2.5 text-secondary">
+                                <!-- colon-container -->
+                                <h4 class="text-tl-sm">:</h4>
+                            </div>
+                            <div class="flex py-1 items-center gap-2.5 flex-[1_0_0] text-secondary">
+                                <!-- value-container -->
+                                <h4 class="text-tl-sm">Tekom E</h4>
+                            </div>
+                        </div>
+
+                        <div class="flex justify-center items-center self-stretch"> <!-- container-box -->
+                            <div class="flex w-[130px] py-1 items-center gap-2.5 text-secondary">
+                                <!-- label-container -->
+                                <h4 class="text-tl-sm">Tahun</h4>
+                            </div>
+                            <div
+                                class="flex w-[25px] py-1 px-4 pl-0 flex-col justify-center items-start gap-2.5 text-secondary">
+                                <!-- colon-container -->
+                                <h4 class="text-tl-sm">:</h4>
+                            </div>
+                            <div class="flex py-1 items-center gap-2.5 flex-[1_0_0] text-secondary">
+                                <!-- value-container -->
+                                <h4 class="text-tl-sm">2023</h4>
+                            </div>
+                        </div>
+
+                        <div class="flex justify-center items-center self-stretch"> <!-- container-box -->
+                            <div class="flex w-[130px] py-1 items-center gap-2.5 text-secondary">
+                                <!-- label-container -->
+                                <h4 class="text-tl-sm">Password</h4>
+                            </div>
+                            <div
+                                class="flex w-[25px] py-1 px-4 pl-0 flex-col justify-center items-start gap-2.5 text-secondary">
+                                <!-- colon-container -->
+                                <h4 class="text-tl-sm">:</h4>
+                            </div>
+                            <div class="flex py-1 items-center gap-2.5 flex-[1_0_0] text-secondary">
+                                <!-- value-container -->
+                                <h4 class="text-tl-sm">4350kywUz+a.</h4>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+                <!-- Button Container -->
+                <div class="segmented-picker flex justify-end items-center gap-4 py-4 self-stretch">
+                    <!-- Button Circle Primary -->
+                    <button type="submit"
+                        class="inline-flex h-14 px-3 flex-col justify-center items-center flex-shrink-0 rounded-lg border-2 bg-whiteLayer-2 border-blackLayer-0 hover:bg-whiteLayer-3 active:border-2 active:border-blackLayer-4 active:bg-whiteLayer-3 transition-transform duration-300 ease-in-out hover:scale-90 active:scale-100">
+                        <div class="flex py-3.5 px-10 flex-col justify-center items-center gap-2.5 flex-grow">
+                            <div class="flex justify-center items-center gap-6">
+
+                                <!-- Icon Left (Hidden by Default) -->
+                                <div class="flex w-6 h-6 justify-center items-center flex-shrink-0 hidden">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                                        fill="none">
+                                        <path d="M3 12L21 12" stroke="currentColor" stroke-linecap="round" />
+                                        <path d="M15 18L21 12L15 6" stroke="currentColor" stroke-linecap="round" />
+                                    </svg>
+                                </div>
+
+                                <!-- Text Container -->
+                                <label
+                                    class="text-lb-md font-semibold flex justify-center items-center text-secondary">Reset</label>
+
+                                <!-- Icon Right (Hidden by Default) -->
+                                <div class="flex w-6 h-6 justify-center items-center flex-shrink-0 hidden">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                                        fill="none">
+                                        <path d="M21 12L3 12" stroke="currentColor" stroke-linecap="round" />
+                                        <path d="M9 6L3 12L9 18" stroke="currentColor" stroke-linecap="round" />
+                                    </svg>
+                                </div>
+                            </div>
+                        </div>
+                    </button>
+                    <!-- Button Circle Secondary -->
+                    <button type="submit"
+                        class="inline-flex h-14 px-3 flex-col justify-center items-center flex-shrink-0 rounded-lg bg-blackLayer-0 hover:bg-blackLayer-1 active:border-2 active:border-blackLayer-4 active:bg-blackLayer-0 transition-transform duration-300 ease-in-out hover:scale-90 active:scale-100">
+                        <div class="flex py-3.5 px-10 flex-col justify-center items-center gap-2.5 flex-grow">
+                            <div class="flex justify-center items-center gap-6 text-primary">
+
+                                <!-- Icon Left (Hidden by Default) -->
+                                <div class="flex w-6 h-6 justify-center items-center flex-shrink-0 hidden">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                                        fill="none">
+                                        <path d="M3 12L21 12" stroke="currentColor" stroke-linecap="round" />
+                                        <path d="M15 18L21 12L15 6" stroke="currentColor" stroke-linecap="round" />
+                                    </svg>
+                                </div>
+
+                                <!-- Text Container -->
+                                <label class="text-lb-md font-semibold flex justify-center items-center ">Next</label>
+
+                                <!-- Icon Right (Hidden by Default) -->
+                                <div class="flex w-6 h-6 justify-center items-center flex-shrink-0 hidden">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                                        fill="none">
+                                        <path d="M21 12L3 12" stroke="currentColor" stroke-linecap="round" />
+                                        <path d="M9 6L3 12L9 18" stroke="currentColor" stroke-linecap="round" />
+                                    </svg>
+                                </div>
+                            </div>
+                        </div>
+                    </button>
+
+
+
+                </div>
+            </form>
+        </div>
+    </div>
+
+</body>
+
+</html>

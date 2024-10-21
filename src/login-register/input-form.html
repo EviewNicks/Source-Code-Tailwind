@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Input Form Login register</title>
+    <link href="../../dist/output.css" rel="stylesheet">
+</head>
+
+<body class="font-poppins">
+    <!-- Input Form Login  -->
+    <div class="input-form flex py-8 px-9 items-center gap-2.5 flex-grow self-stretch rounded-3xl bg-whiteLayer-3">
+        <div class="border-background flex p-1 flex-col items-start flex-grow rounded-[26px] bg-grad-bluesky">
+            <div
+                class="input-form-container flex py-6 px-8 justify-center items-center gap-2.5 flex-grow self-stretch rounded-3xl bg-whiteLayer-2">
+                <div
+                    class="input-form-container-child flex flex-col items-center justify-between self-stretch flex-wrap-nowrap flex-grow flex-shrink-0 basis-0 relative">
+                    <!-- Templete-2 Input-FIeld-Container -->
+                    <div
+                        class="number-input-container flex flex-col justify-between items-center flex-grow self-stretch">
+                        <div class="head-container flex justify-center items-center self-stretch">
+                            <h2 class="text-tl-lg text-secondary">Create Account</h2>
+                        </div>
+                        <div class="number-input flex flex-col justify-between items-center flex-grow self-stretch">
+                            <!-- Masukkan di sini code input -->
+                            <div
+                                class="input-container size-big flex flex-col justify-center items-center gap-1.5 px-1 self-stretch">
+                                <!-- Label -->
+                                <div class="label flex justify-start items-center gap-2.5 self-stretch">
+                                    <span class="text-lb-md font-semibold text-grey-3">Masukkan Gmail</span>
+                                </div>
+                                <!-- Input Field -->
+                                <div
+                                    class="container-input flex flex-col justify-center items-center gap-2.5 p-3.5 rounded-lg bg-white border border-grey-2 focus-within:border-info focus-within:ring-2 focus-within:ring-info self-stretch transition duration-300 ease-in-out">
+                                    <input id="input-field-nama"
+                                        class="input-field w-full bg-transparent text-body-medium placeholder:text-grey-2 focus:outline-none"
+                                        type="text" placeholder="Gmail" />
+                                </div>
+                                <!-- Status Text -->
+                                <div class="status flex justify-start items-center gap-2.5 self-stretch mt-1">
+                                    <span class="status-text text-p-lg text-grey-2" hidden>Status</span>
+                                </div>
+                            </div>
+                            <div
+                                class="input-container size-big flex flex-col justify-center items-center gap-1.5 px-1 self-stretch">
+                                <!-- Label -->
+                                <div class="label flex justify-start items-center gap-2.5 self-stretch">
+                                    <span class="text-lb-md font-semibold text-grey-3">Masukkan Password</span>
+                                </div>
+                                <!-- Input Field -->
+                                <div
+                                    class="container-input flex flex-col justify-center items-center gap-2.5 p-3.5 rounded-lg bg-white border border-grey-2 focus-within:border-info focus-within:ring-2 focus-within:ring-info self-stretch transition duration-300 ease-in-out">
+                                    <input id="input-field-nama"
+                                        class="input-field w-full bg-transparent text-body-medium placeholder:text-grey-2 focus:outline-none"
+                                        type="text" placeholder="Password" />
+                                </div>
+                                <!-- Status Text -->
+                                <div class="status flex justify-start items-center gap-2.5 self-stretch mt-1">
+                                    <span class="status-text text-p-lg text-grey-2" hidden>Status</span>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+
+                    <!-- Template-1 Button Container -->
+                    <div class="flex pt-3 flex-col items-start gap-1.5 flex-grow w-full ">
+                        <div class="flex items-center">
+                            <label class="flex items-center gap-2.5 cursor-pointer">
+                                <input type="checkbox"
+                                    class="w-4 h-4 border-2 border-secondary rounded bg-whiteLayer-0 transition-all duration-300 ease-in-out">
+                                <span class="lb-md">Remember Me?</span>
+                            </label>
+                        </div>
+                        <!-- Button Box Secondary -->
+                        <button type="submit"
+                            class="inline-flex w-full h-14 px-3 flex-col justify-center items-center flex-grow rounded-lg bg-blackLayer-0 hover:bg-blackLayer-1 active:border-2 active:border-blackLayer-4 active:bg-blackLayer-0 transition-transform duration-300 ease-in-out hover:scale-90 active:scale-100">
+                            <div class="flex py-3.5 px-10 flex-col justify-center items-center gap-2.5 flex-grow">
+                                <div class="flex justify-center items-center gap-6 text-primary">
+
+                                    <!-- Icon Left (Hidden by Default) -->
+                                    <div class="flex w-6 h-6 justify-center items-center flex-shrink-0 hidden ">
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24"
+                                            viewBox="0 0 24 24" fill="none">
+                                            <path d="M3 12L21 12" stroke="currentColor" stroke-linecap="round" />
+                                            <path d="M15 18L21 12L15 6" stroke="currentColor" stroke-linecap="round" />
+                                        </svg>
+                                    </div>
+
+                                    <!-- Text Container -->
+                                    <span class="text-lb-sm font-semibold flex justify-center items-center ">Create
+                                        Account</span>
+
+                                    <!-- Icon Right (Hidden by Default) -->
+                                    <div class="flex w-6 h-6 justify-center items-center flex-shrink-0 hidden">
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24"
+                                            viewBox="0 0 24 24" fill="none">
+                                            <path d="M21 12L3 12" stroke="currentColor" stroke-linecap="round" />
+                                            <path d="M9 6L3 12L9 18" stroke="currentColor" stroke-linecap="round" />
+                                        </svg>
+                                    </div>
+                                </div>
+                            </div>
+                        </button>
+                        <div class="flex flex-col justify-center items-center">
+                            <p class="text-p-md text-secondary">Not Registered yet?
+                                <b class="text-info text-lb-md">Register</b>
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>

@@ -1,0 +1,11 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@import '@fontsource/poppins';
+
+/* Set the global font */
+html {
+    font-family: 'Poppins', sans-serif;
+    /* Huruf kapital "P" pada Poppins */
+}

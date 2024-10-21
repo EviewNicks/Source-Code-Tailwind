@@ -1,0 +1,290 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Create User Account</title>
+    <link href="../dist/output.css" rel="stylesheet">
+</head>
+
+<body class="font-poppins bg-whiteLayer-0 flex justify-center items-center w-full min-h-screen">
+    <div class="create-user-account-box flex w-full h-auto mx-20 flex-col justify-center items-center rounded-3xl">
+        <div
+            class="container-card min-h-[563px] min-w-[916px] flex justify-between items-start self-stretch rounded-[24px] bg-gold">
+            <!-- Card container -->
+            <div class="box-card flex flex-col items-start flex-grow self-stretch">
+                <nav class="container-breadcrumb flex h-10 flex-col justify-between items-start self-stretch"
+                    aria-label="Breadcrumb">
+                    <div
+                        class="breadcrumb-box flex p-2 px-4 flex-col items-start gap-2.5 rounded-tl-3xl rounded-br-3xl bg-secondary">
+                        <ul class="progress-bar flex items-center">
+                            <!-- Breadcrumb 1 -->
+                            <li class="container flex pr-4 items-center gap-4">
+                                <a href="#" aria-label="data-mahasiswa" class="whitespace-nowrap">
+                                    <span class="text-lb-md font-semibold text-primary">Data Mahasiswa</span>
+                                </a>
+                                <div class="arrow-icon flex w-8 h-8 justify-center items-center">
+                                    <!-- SVG file -->
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 25"
+                                        fill="none">
+                                        <path fill-rule="evenodd" clip-rule="evenodd"
+                                            d="M2 12.5C2 18.0228 6.47715 22.5 12 22.5C17.5228 22.5 22 18.0228 22 12.5C22 6.97715 17.5228 2.5 12 2.5C6.47715 2.5 2 6.97715 2 12.5Z"
+                                            stroke="#FFF0D1" />
+                                        <path d="M7.5 12.5L16.5 12.5" stroke="#FFF0D1" stroke-linecap="round" />
+                                        <path d="M13.5 15.5L16.5 12.5L13.5 9.5" stroke="#FFF0D1"
+                                            stroke-linecap="round" />
+                                    </svg>
+                                </div>
+                            </li>
+
+                            <!-- Breadcrumb 2 -->
+                            <li class="container flex pr-4 items-center gap-4">
+                                <a href="#" aria-label="Password" class="whitespace-nowrap">
+                                    <span class="text-lb-md font-semibold text-info">Password</span>
+                                </a>
+                                <div class="arrow-icon flex w-8 h-8 justify-center items-center">
+                                    <!-- SVG file -->
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 25"
+                                        fill="none">
+                                        <path fill-rule="evenodd" clip-rule="evenodd"
+                                            d="M2 12.5C2 18.0228 6.47715 22.5 12 22.5C17.5228 22.5 22 18.0228 22 12.5C22 6.97715 17.5228 2.5 12 2.5C6.47715 2.5 2 6.97715 2 12.5Z"
+                                            stroke="#FFF0D1" />
+                                        <path d="M7.5 12.5L16.5 12.5" stroke="#FFF0D1" stroke-linecap="round" />
+                                        <path d="M13.5 15.5L16.5 12.5L13.5 9.5" stroke="#FFF0D1"
+                                            stroke-linecap="round" />
+                                    </svg>
+                                </div>
+                            </li>
+
+                            <!-- Breadcrumb 3 -->
+                            <li class="container flex items-center">
+                                <a href="#" aria-label="verifikasi" class="whitespace-nowrap">
+                                    <span class="text-lb-md font-semibold text-info">Verifikasi</span>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </nav>
+
+                <!-- Card Content -->
+                <div class="container-box-card flex px-10 py-10 justify-center items-center flex-grow self-stretch">
+                    <div
+                        class="card flex min-w-[250px] p-2.5 flex-col items-start flex-grow self-stretch rounded-3xl bg-moon">
+                        <!-- Card content -->
+                    </div>
+                </div>
+            </div>
+
+            <!-- Form Input -->
+            <div class="form-input flex flex-col items-end flex-grow self-stretch rounded-3xl bg-whiteLayer-2">
+                <!-- Remove Button -->
+                <button type="button" aria-label="Remove"
+                    class="remove-button flex p-3 items-center flex-col justify-center rounded-tr-3xl rounded-bl-3xl bg-blackLayer-0">
+                    <div class="icon-container flex p-2 flex-col justify-center items-center">
+                        <div class="icon w-6 h-6 flex-shrink-0">
+                            <!-- file SVG -->
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="25" viewBox="0 0 24 25"
+                                fill="none">
+                                <path d="M17.6569 18.1569L6.34319 6.84315" stroke="#FFF0D1" stroke-linecap="round" />
+                                <path d="M17.6568 6.84315L6.34311 18.1569" stroke="#FFF0D1" stroke-linecap="round" />
+                            </svg>
+                        </div>
+                    </div>
+                </button>
+
+                <!-- Input Form Container -->
+                <div class="input-form-container flex px-6 justify-between items-center flex-grow self-stretch">
+
+                    <form action="create-user-account"
+                        class="form-container flex flex-col items-center gap-5 flex-grow self-stretch">
+                        <div class="form flex flex-col justify-between items-center flex-grow self-stretch">
+                            <!-- Text Container -->
+                            <div class="text-container flex flex-col items-center self-stretch">
+                                <h2 class="text-tl-lg text-secondary font-semibold">Create User Account</h2>
+                            </div>
+                            <!-- Input Form -->
+                            <div class="input-form flex flex-col items-center gap-4 flex-[1_0_0] self-stretch">
+                                <!-- Input fields go here -->
+                                <div
+                                    class="input-container size-big flex flex-col justify-center items-center gap-1.5 px-1 self-stretch">
+                                    <!-- Label -->
+                                    <div class="label flex justify-start items-center gap-2.5 self-stretch">
+                                        <span class="text-lb-md font-semibold text-grey-3">Nama Mahasiswa</span>
+                                    </div>
+                                    <!-- Input Field -->
+                                    <div
+                                        class="container-input flex flex-col justify-center items-center gap-2.5 p-3.5 rounded-lg bg-white border border-grey-2 focus-within:border-info focus-within:ring-2 focus-within:ring-info self-stretch transition duration-300 ease-in-out">
+                                        <input id="input-field-nama"
+                                            class="input-field w-full bg-transparent text-body-medium placeholder:text-grey-2 focus:outline-none"
+                                            type="text" placeholder="Placeholder" />
+                                    </div>
+                                    <!-- Status Text -->
+                                    <div class="status flex justify-start items-center gap-2.5 self-stretch mt-1">
+                                        <span class="status-text text-p-lg text-grey-2" hidden>Status</span>
+                                    </div>
+
+                                </div>
+
+                                <div
+                                    class="input-container size-big flex flex-col justify-center items-center gap-1.5 px-1 self-stretch">
+                                    <!-- Label -->
+                                    <div class="label flex justify-start items-center gap-2.5 self-stretch">
+                                        <span class="text-lb-md font-semibold text-grey-3">NIM Mahasiswa</span>
+                                    </div>
+                                    <!-- Input Field -->
+                                    <div
+                                        class="container-input flex flex-col justify-center items-center gap-2.5 p-3.5 rounded-lg bg-white border border-grey-2 focus-within:border-info focus-within:ring-2 focus-within:ring-info self-stretch transition duration-300 ease-in-out">
+                                        <input id="input-field-nim"
+                                            class="input-field w-full bg-transparent text-body-medium placeholder:text-grey-2 focus:outline-none"
+                                            type="text" placeholder="Placeholder" />
+                                    </div>
+                                    <!-- Status Text -->
+                                    <div class="status flex justify-start items-center gap-2.5 self-stretch mt-1">
+                                        <span class="status-text text-p-lg text-grey-2" hidden>Status</span>
+                                    </div>
+
+                                </div>
+
+                                <div class="input-container size-big flex flex-col justify-center items-center gap-1.5 px-1 flex-grow self-stretch"
+                                    hidden>
+                                    <!-- Label -->
+                                    <div class="label flex justify-start items-center gap-2.5 self-stretch">
+                                        <span class="text-lb-md font-semibold text-grey-3">Prodi Mahasiswa</span>
+                                    </div>
+                                    <!-- Input Field -->
+                                    <div
+                                        class="container-input flex flex-col justify-center items-center gap-2.5 p-3.5 rounded-lg bg-white border border-grey-2 focus-within:border-info focus-within:ring-2 focus-within:ring-info self-stretch transition duration-300 ease-in-out">
+                                        <input id="input-field-prodi"
+                                            class="input-field w-full bg-transparent text-body-medium placeholder:text-grey-2 focus:outline-none"
+                                            type="text" placeholder="Placeholder" />
+                                    </div>
+                                    <!-- Status Text -->
+                                    <div class="status flex justify-start items-center gap-2.5 self-stretch mt-1">
+                                        <span class="status-text text-p-lg text-grey-2" hidden>Status</span>
+                                    </div>
+
+                                </div>
+
+                                <div class="text-form flex justify-between items-center self-stretch">
+                                    <div
+                                        class="input-container size-big flex flex-col justify-center items-center gap-1.5 px-1 flex-grow self-stretch">
+                                        <!-- Label -->
+                                        <div class="label flex justify-start items-center gap-2.5 self-stretch">
+                                            <span class="text-lb-md font-semibold text-grey-3">Kelas Mahasiswa</span>
+                                        </div>
+                                        <!-- Input Field -->
+                                        <div
+                                            class="container-input flex flex-col justify-center items-center gap-2.5 p-3.5 rounded-lg bg-white border border-grey-2 focus-within:border-info focus-within:ring-2 focus-within:ring-info self-stretch transition duration-300 ease-in-out">
+                                            <input id="input-field-kelas"
+                                                class="input-field w-full bg-transparent text-body-medium placeholder:text-grey-2 focus:outline-none"
+                                                type="text" placeholder="Placeholder" />
+                                        </div>
+                                        <!-- Status Text -->
+                                        <div class="status flex justify-start items-center gap-2.5 self-stretch mt-1">
+                                            <span class="status-text text-p-lg text-grey-2" hidden>Status</span>
+                                        </div>
+
+                                    </div>
+
+                                    <div
+                                        class="input-container size-big flex flex-col justify-center items-center gap-1.5 px-1 flex-grow self-stretch">
+                                        <!-- Label -->
+                                        <div class="label flex justify-start items-center gap-2.5 self-stretch">
+                                            <span class="text-lb-md font-semibold text-grey-3">Tahun </span>
+                                        </div>
+                                        <!-- Input Field -->
+                                        <div
+                                            class="container-input flex flex-col justify-center items-center gap-2.5 p-3.5 rounded-lg bg-white border border-grey-2 focus-within:border-info focus-within:ring-2 focus-within:ring-info self-stretch transition duration-300 ease-in-out">
+                                            <input id="input-field-tahun"
+                                                class="input-field w-full bg-transparent text-body-medium placeholder:text-grey-2 focus:outline-none"
+                                                type="text" placeholder="Placeholder" />
+                                        </div>
+                                        <!-- Status Text -->
+                                        <div class="status flex justify-start items-center gap-2.5 self-stretch mt-1">
+                                            <span class="status-text text-p-lg text-grey-2" hidden>Status</span>
+                                        </div>
+
+                                    </div>
+                                </div>
+
+                            </div>
+                        </div>
+
+                        <!-- Button Container -->
+                        <div class="segmented-picker flex justify-end items-center gap-4 py-4 self-stretch">
+                            <!-- Button Circle Primary -->
+                            <button type="submit"
+                                class="inline-flex h-14 px-3 flex-col justify-center items-center flex-shrink-0 rounded-lg border-2 bg-whiteLayer-2 border-blackLayer-0 hover:bg-whiteLayer-3 active:border-2 active:border-blackLayer-4 active:bg-whiteLayer-3 transition-transform duration-300 ease-in-out hover:scale-90 active:scale-100">
+                                <div class="flex py-3.5 px-10 flex-col justify-center items-center gap-2.5 flex-grow">
+                                    <div class="flex justify-center items-center gap-6">
+
+                                        <!-- Icon Left (Hidden by Default) -->
+                                        <div class="flex w-6 h-6 justify-center items-center flex-shrink-0 hidden">
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24"
+                                                viewBox="0 0 24 24" fill="none">
+                                                <path d="M3 12L21 12" stroke="currentColor" stroke-linecap="round" />
+                                                <path d="M15 18L21 12L15 6" stroke="currentColor"
+                                                    stroke-linecap="round" />
+                                            </svg>
+                                        </div>
+
+                                        <!-- Text Container -->
+                                        <label
+                                            class="text-lb-md font-semibold flex justify-center items-center text-secondary">Reset</label>
+
+                                        <!-- Icon Right (Hidden by Default) -->
+                                        <div class="flex w-6 h-6 justify-center items-center flex-shrink-0 hidden">
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24"
+                                                viewBox="0 0 24 24" fill="none">
+                                                <path d="M21 12L3 12" stroke="currentColor" stroke-linecap="round" />
+                                                <path d="M9 6L3 12L9 18" stroke="currentColor" stroke-linecap="round" />
+                                            </svg>
+                                        </div>
+                                    </div>
+                                </div>
+                            </button>
+                            <!-- Button box Secondary -->
+                            <button type="submit"
+                                class="inline-flex h-14 px-3 flex-col justify-center items-center flex-shrink-0 rounded-lg bg-blackLayer-0 hover:bg-blackLayer-1 active:border-2 active:border-blackLayer-4 active:bg-blackLayer-0 transition-transform duration-300 ease-in-out hover:scale-90 active:scale-100">
+                                <div class="flex py-3.5 px-10 flex-col justify-center items-center gap-2.5 flex-grow">
+                                    <div class="flex justify-center items-center gap-6 text-primary">
+
+                                        <!-- Icon Left (Hidden by Default) -->
+                                        <div class="flex w-6 h-6 justify-center items-center flex-shrink-0 hidden">
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24"
+                                                viewBox="0 0 24 24" fill="none">
+                                                <path d="M3 12L21 12" stroke="currentColor" stroke-linecap="round" />
+                                                <path d="M15 18L21 12L15 6" stroke="currentColor"
+                                                    stroke-linecap="round" />
+                                            </svg>
+                                        </div>
+
+                                        <!-- Text Container -->
+                                        <label
+                                            class="text-lb-md font-semibold flex justify-center items-center ">Next</label>
+
+                                        <!-- Icon Right (Hidden by Default) -->
+                                        <div class="flex w-6 h-6 justify-center items-center flex-shrink-0 hidden">
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24"
+                                                viewBox="0 0 24 24" fill="none">
+                                                <path d="M21 12L3 12" stroke="currentColor" stroke-linecap="round" />
+                                                <path d="M9 6L3 12L9 18" stroke="currentColor" stroke-linecap="round" />
+                                            </svg>
+                                        </div>
+                                    </div>
+                                </div>
+                            </button>
+
+
+
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</body>
+
+</html>

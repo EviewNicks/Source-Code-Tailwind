@@ -1,0 +1,9 @@
+{
+  "devDependencies": {
+    "tailwindcss": "^3.4.14"
+  },
+  "dependencies": {
+    "@fontsource/poppins": "^5.1.0",
+    "tailwindcss-gradients": "^3.0.0"
+  }
+}

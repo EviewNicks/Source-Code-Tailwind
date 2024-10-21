@@ -1,0 +1,332 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home Page Administrator</title>
+    <link rel="stylesheet" href="../dist/output.css">
+</head>
+
+<body>
+    <div
+        class="table-container flex min-w-[1024px] px-20 flex-col justify-center items-end gap-2 flex-grow self-stretch">
+        <!-- Navigasi Bar -->
+        <nav class="navigation-bar px-20 self-stretch gap-2.5">
+            <div class="navbar flex py-2.5 px-8 justify-between items-center rounded-xl bg-secondary self-stretch">
+
+                <!-- Logo -->
+                <a href="#" class="logo-container text-primary">
+                    <h3 class="text-h-sm">SecureByte</h3>
+                </a>
+
+                <!-- List Navigasi -->
+                <div class="links-container flex justify-center items-center flex-grow self-stretch">
+                    <ul class="links-wrapper flex max-w-[628px] justify-center items-center">
+                        <li class="link-item flex px-2 flex-col justify-center items-center gap-2.5 flex-grow">
+                            <div
+                                class="link-item-wrapper flex py-2 px-8 flex-col justify-center items-center gap-2.5 rounded-xl hover:bg-grad-glass hover:rounded-xl active:border-2 active:border-primary active:bg-grad-glass active:shadow-md">
+                                <a href="#"
+                                    class="link text-primary flex justify-center items-center gap-2.5 self-stretch">
+                                    <span class="text-lb-sm">Home</span>
+                                </a>
+                            </div>
+                        </li>
+
+                        <li class="link-item flex px-2 flex-col justify-center items-center gap-2.5 flex-grow">
+                            <div
+                                class="link-item-wrapper flex py-2 px-8 flex-col justify-center items-center gap-2.5 rounded-xl hover:bg-grad-glass hover:rounded-xl active:border-2 active:border-primary active:bg-grad-glass active:shadow-md">
+                                <a href="#"
+                                    class="link text-primary flex justify-center items-center gap-2.5 self-stretch">
+                                    <span class="text-lb-sm">Modul</span>
+                                </a>
+                            </div>
+                        </li>
+
+                        <li class="link-item flex px-2 flex-col justify-center items-center gap-2.5 flex-grow">
+                            <div
+                                class="link-item-wrapper flex py-2 px-8 flex-col justify-center items-center gap-2.5 rounded-xl hover:bg-grad-glass hover:rounded-xl active:border-2 active:border-primary active:bg-grad-glass active:shadow-md">
+                                <a href="#"
+                                    class="link text-primary flex justify-center items-center gap-2.5 self-stretch">
+                                    <span class="text-lb-sm">Berita</span>
+                                </a>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+
+                <!-- Ikon dengan Button dan aria label -->
+                <div class="icons-container flex w-[163px] justify-end items-center gap-8 self-stretch">
+                    <button type="button" class="icon-navbar w-6 h-6 flex justify-center items-center cursor-pointer"
+                        aria-label="Notification">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 32 32" fill="none">
+                            <path fill-rule="evenodd" clip-rule="evenodd"
+                                d="M15.9998 4C20.4181 4 23.9998 7.58166 23.9998 11.9999C23.9998 14.5508 23.9998 17.1122 23.9998 18.6667C23.9998 22.6667 26.6665 24 26.6665 24L5.33317 24C5.33317 24 7.99984 22.6667 7.99984 18.6667C7.99984 17.1122 7.99984 14.5508 7.99984 11.9999C7.99984 7.58166 11.5816 4 15.9998 4V4Z"
+                                stroke="#FFF0D1" stroke-linejoin="round" />
+                            <path
+                                d="M13.3332 24C13.3332 25.4728 14.5271 26.6667 15.9998 26.6667C17.4726 26.6667 18.6665 25.4728 18.6665 24"
+                                stroke="#FFF0D1" />
+                        </svg>
+                    </button>
+                    <button type="button" class="icon-navbar w-6 h-6 flex justify-center items-center cursor-pointer"
+                        aria-label="Profile">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 32 32" fill="none">
+                            <path
+                                d="M7.3335 26C7.3335 26 12.0002 24 13.3335 22.6667C14.6668 21.3333 10.6668 21.3333 10.6668 14.6667C10.6668 8 16.0002 8 16.0002 8C16.0002 8 21.3335 8 21.3335 14.6667C21.3335 21.3333 17.3335 21.3333 18.6668 22.6667C20.0002 24 24.6668 26 24.6668 26"
+                                stroke="#FFF0D1" stroke-linecap="round" />
+                            <path fill-rule="evenodd" clip-rule="evenodd"
+                                d="M15.9998 29.3334C23.3636 29.3334 29.3332 23.3638 29.3332 16C29.3332 8.63622 23.3636 2.66669 15.9998 2.66669C8.63604 2.66669 2.6665 8.63622 2.6665 16C2.6665 23.3638 8.63604 29.3334 15.9998 29.3334Z"
+                                stroke="#FFF0D1" />
+                        </svg>
+                    </button>
+                </div>
+            </div>
+        </nav>
+
+        <!-- End -->
+
+        <!-- Button -->
+        <button type="submit"
+            class="inline-flex h-12 px-6 justify-center items-center flex-shrink-0 rounded-full bg-blackLayer-0 hover:bg-blackLayer-1 active:border-2 active:border-blackLayer-4 active:bg-blackLayer-0 transition-transform duration-300 ease-in-out hover:scale-90 active:scale-100">
+            <div class="flex justify-center items-center gap-4">
+                <div class="flex items-center gap-4 text-primary">
+                    <!-- Icon Left (Hidden by Default) -->
+                    <div class="flex w-5 h-5 justify-center items-center flex-shrink-0 hidden">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
+                            <path d="M3 12L21 12" stroke="currentColor" stroke-linecap="round" />
+                            <path d="M15 18L21 12L15 6" stroke="currentColor" stroke-linecap="round" />
+                        </svg>
+                    </div>
+
+                    <!-- Text Container -->
+                    <span class="text-lb-md font-semibold">Create Account</span>
+
+                    <!-- Icon Right (Hidden by Default) -->
+                    <div class="flex w-5 h-5 justify-center items-center flex-shrink-0 hidden">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
+                            <path d="M21 12L3 12" stroke="currentColor" stroke-linecap="round" />
+                            <path d="M9 6L3 12L9 18" stroke="currentColor" stroke-linecap="round" />
+                        </svg>
+                    </div>
+                </div>
+            </div>
+        </button>
+
+
+        <!-- Tabel -->
+        <div class="table-shape w-full p-0.5 bg-bluesky rounded-[26px]">
+            <div class="table-body-container w-full overflow-x-auto rounded-3xl bg-whiteLayer-3">
+                <table class="w-full border-collapse">
+                    <thead class="bg-blackLayer-1 text-primary">
+                        <tr>
+                            <th class="px-2.5 py-1.5 text-center">
+                                <span class="text-lb-sm">Nama</span>
+                            </th>
+                            <th class="px-2.5 py-1.5 text-center">
+                                <span class="text-lb-sm ">NIM</span>
+                            </th>
+                            <th class="px-2.5 py-1.5 text-center">
+                                <span class="text-lb-sm">Kelas</span>
+                            </th>
+                            <th class="px-2.5 py-1.5 text-center">
+                                <span class="text-lb-sm">Tahun</span>
+                            </th>
+                            <th class="px-2.5 py-1.5 text-center">
+                                <span class="text-lb-sm">Status Verifikasi</span>
+                            </th>
+                        </tr>
+                    </thead>
+
+                    <!-- body Container -->
+                    <tbody>
+                        <!-- .layer-1 -->
+                        <tr class="bg-[#FFF9ED] text-center">
+                            <td class="px-2.5 py-1.5">
+                                <span class="text-lb-sm">Ardiansyah</span>
+                            </td>
+                            <td class="px-2.5 py-1.5">
+                                <span class="text-lb-sm">230210501014</span>
+                            </td>
+                            <td class="px-2.5 py-1.5">
+                                <span class="text-lb-sm">Tekom E</span>
+                            </td>
+                            <td class="px-2.5 py-1.5">
+                                <span class="text-lb-sm">2023</span>
+                            </td>
+                            <td class="px-2.5 py-1.5">
+                                <span class="text-lb-sm">False</span>
+                            </td>
+                        </tr>
+
+                        <!-- .layer-2 -->
+                        <tr class="bg-[#FFF0D1] text-center">
+                            <td class="px-2.5 py-1.5">
+                                <span class="text-lb-sm">Fadil Hambali</span>
+                            </td>
+                            <td class="px-2.5 py-1.5">
+                                <span class="text-lb-sm">230210501015</span>
+                            </td>
+                            <td class="px-2.5 py-1.5">
+                                <span class="text-lb-sm">Tekom F</span>
+                            </td>
+                            <td class="px-2.5 py-1.5">
+                                <span class="text-lb-sm">2023</span>
+                            </td>
+                            <td class="px-2.5 py-1.5">
+                                <span class="text-lb-sm">True</span>
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+
+
+
+
+        <!-- Pagination Arrow -->
+        <div class="flex py-4 justify-center items-center gap-4 self-stretch">
+
+            <!-- Pagination Arrow -->
+            <button title="pagination" type="button"
+                class="flex px-2 py-0.5 flex-col justify-center items-center self-stretch rounded bg-secondary text-primary hover:bg-blackLayer-1 hover:border-2 hover:border-blackLayer-4 active:bg-whiteLayer-3 focus:bg-whiteLayer-3 focus:text-secondary focus:border-2 focus:border-blackLayer-0 transition-transform duration-300 ease-in-out">
+                <div class="flex px-2.5 justify-between items-center self-stretch ">
+                    <div class="flex justify-center items-center gap-2.5 flex-grow">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
+                            stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                            class="focus-within:text-secondary">
+                            <path d="M11 7L6 12L11 17" />
+                            <path d="M17 7L12 12L17 17" />
+                        </svg>
+                    </div>
+                    <div
+                        class="text-lb-md flex py-0.5 flex-col justify-center items-center gap-2.5 focus:text-secondary">
+                        <span hidden>1</span>
+                    </div>
+                    <div class="flex justify-center items-center gap-2.5 flex-grow">
+                        <svg hidden xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                            fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                            class="focus-within:text-secondary">
+                            <path d="M13 17L18 12L13 7" />
+                            <path d="M7 17L12 12L7 7" />
+                        </svg>
+                    </div>
+                </div>
+            </button>
+
+
+            <!-- Pagination Number -->
+            <button title="pagination" type="button"
+                class="flex px-2 py-0.5 flex-col justify-center items-center self-stretch rounded bg-secondary text-primary hover:bg-blackLayer-1 hover:border-2 hover:border-blackLayer-4 active:bg-whiteLayer-3 focus:bg-whiteLayer-3 focus:text-secondary focus:border-2 focus:border-blackLayer-0 transition-transform duration-300 ease-in-out">
+                <div class="flex px-2.5 justify-between items-center self-stretch ">
+                    <div class="flex justify-center items-center gap-2.5 flex-grow">
+                        <svg hidden xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                            fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                            class="focus-within:text-secondary">
+                            <path d="M11 7L6 12L11 17" />
+                            <path d="M17 7L12 12L17 17" />
+                        </svg>
+                    </div>
+                    <div
+                        class="text-lb-md flex py-0.5 flex-col justify-center items-center gap-2.5 focus:text-secondary">
+                        <span>1</span>
+                    </div>
+                    <div class="flex justify-center items-center gap-2.5 flex-grow">
+                        <svg hidden xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                            fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                            class="focus-within:text-secondary">
+                            <path d="M13 17L18 12L13 7" />
+                            <path d="M7 17L12 12L7 7" />
+                        </svg>
+                    </div>
+                </div>
+            </button>
+
+
+
+            <!-- Pagination Number -->
+            <button title="pagination" type="button"
+                class="flex px-2 py-0.5 flex-col justify-center items-center self-stretch rounded bg-secondary text-primary hover:bg-blackLayer-1 hover:border-2 hover:border-blackLayer-4 active:bg-whiteLayer-3 focus:bg-whiteLayer-3 focus:text-secondary focus:border-2 focus:border-blackLayer-0 transition-transform duration-300 ease-in-out">
+                <div class="flex px-2.5 justify-between items-center self-stretch ">
+                    <div class="flex justify-center items-center gap-2.5 flex-grow">
+                        <svg hidden xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                            fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                            class="focus-within:text-secondary">
+                            <path d="M11 7L6 12L11 17" />
+                            <path d="M17 7L12 12L17 17" />
+                        </svg>
+                    </div>
+                    <div
+                        class="text-lb-md flex py-0.5 flex-col justify-center items-center gap-2.5 focus:text-secondary">
+                        <span>2</span>
+                    </div>
+                    <div class="flex justify-center items-center gap-2.5 flex-grow">
+                        <svg hidden xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                            fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                            class="focus-within:text-secondary">
+                            <path d="M13 17L18 12L13 7" />
+                            <path d="M7 17L12 12L7 7" />
+                        </svg>
+                    </div>
+                </div>
+            </button>
+
+            <!-- Pagination number -->
+            <button title="pagination" type="button"
+                class="flex px-2 py-0.5 flex-col justify-center items-center self-stretch rounded bg-secondary text-primary hover:bg-blackLayer-1 hover:border-2 hover:border-blackLayer-4 active:bg-whiteLayer-3 focus:bg-whiteLayer-3 focus:text-secondary focus:border-2 focus:border-blackLayer-0 transition-transform duration-300 ease-in-out">
+                <div class="flex px-2.5 justify-between items-center self-stretch ">
+                    <div class="flex justify-center items-center gap-2.5 flex-grow">
+                        <svg hidden xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                            fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                            class="focus-within:text-secondary">
+                            <path d="M11 7L6 12L11 17" />
+                            <path d="M17 7L12 12L17 17" />
+                        </svg>
+                    </div>
+                    <div
+                        class="text-lb-md flex py-0.5 flex-col justify-center items-center gap-2.5 focus:text-secondary">
+                        <span>...</span>
+                    </div>
+                    <div class="flex justify-center items-center gap-2.5 flex-grow">
+                        <svg hidden xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                            fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                            class="focus-within:text-secondary">
+                            <path d="M13 17L18 12L13 7" />
+                            <path d="M7 17L12 12L7 7" />
+                        </svg>
+                    </div>
+                </div>
+            </button>
+
+
+            <!-- Pagination Arrow -->
+            <button title="pagination" type="button"
+                class="flex px-2 py-0.5 flex-col justify-center items-center self-stretch rounded bg-secondary text-primary hover:bg-blackLayer-1 hover:border-2 hover:border-blackLayer-4 active:bg-whiteLayer-3 focus:bg-whiteLayer-3 focus:text-secondary focus:border-2 focus:border-blackLayer-0 transition-transform duration-300 ease-in-out">
+                <div class="flex px-2.5 justify-between items-center self-stretch ">
+                    <div class="flex justify-center items-center gap-2.5 flex-grow">
+                        <svg hidden xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                            fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                            class="focus-within:text-secondary">
+                            <path d="M11 7L6 12L11 17" />
+                            <path d="M17 7L12 12L17 17" />
+                        </svg>
+                    </div>
+                    <div
+                        class="text-lb-md flex py-0.5 flex-col justify-center items-center gap-2.5 focus:text-secondary">
+                        <span hidden> 1</span>
+                    </div>
+                    <div class="flex justify-center items-center gap-2.5 flex-grow">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
+                            stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                            class="focus-within:text-secondary">
+                            <path d="M13 17L18 12L13 7" />
+                            <path d="M7 17L12 12L7 7" />
+                        </svg>
+                    </div>
+                </div>
+            </button>
+        </div>
+    </div>
+</body>
+
+</html>

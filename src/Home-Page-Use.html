@@ -1,0 +1,1248 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home Page User</title>
+    <link href="../dist/output.css" rel="stylesheet">
+</head>
+
+<body class="flex min-w-[1024px] max-w-[1440px] flex-col items-center bg-whiteLayer-1">
+    <nav class="navigation-bar px-20 py-2 self-stretch gap-2.5">
+        <div class="navbar flex py-2.5 px-8 justify-between items-center rounded-xl bg-secondary self-stretch">
+
+            <!-- Logo -->
+            <a href="#" class="logo-container text-primary">
+                <h3 class="text-h3 font-semibold">SecureByte</h3>
+            </a>
+
+            <!-- List Navigasi -->
+            <div class="links-container flex justify-center items-center flex-grow self-stretch">
+                <ul class="links-wrapper flex max-w-[628px] justify-center items-center gap-6">
+                    <li class="link-item flex px-2 flex-col justify-center items-center gap-2.5 flex-grow">
+                        <div
+                            class="link-item-wrapper flex py-2 px-8 flex-col justify-center items-center gap-2.5 rounded-xl hover:bg-grad-glass hover:rounded-xl active:border-2 active:border-primary active:bg-grad-glass active:shadow-md">
+                            <a href="#" class="link text-primary flex justify-center items-center gap-2.5 self-stretch">
+                                <span class="text-lb-md font-bold">Home</span>
+                            </a>
+                        </div>
+                    </li>
+
+                    <li class="link-item flex px-2 flex-col justify-center items-center gap-2.5 flex-grow">
+                        <div
+                            class="link-item-wrapper flex py-2 px-8 flex-col justify-center items-center gap-2.5 rounded-xl hover:bg-grad-glass hover:rounded-xl active:border-2 active:border-primary active:bg-grad-glass active:shadow-md">
+                            <a href="#" class="link text-primary flex justify-center items-center gap-2.5 self-stretch">
+                                <span class="text-lb-md font-bold">Modul</span>
+                            </a>
+                        </div>
+                    </li>
+
+                    <li class="link-item flex px-2 flex-col justify-center items-center gap-2.5 flex-grow">
+                        <div
+                            class="link-item-wrapper flex py-2 px-8 flex-col justify-center items-center gap-2.5 rounded-xl hover:bg-grad-glass hover:rounded-xl active:border-2 active:border-primary active:bg-grad-glass active:shadow-md">
+                            <a href="#" class="link text-primary flex justify-center items-center gap-2.5 self-stretch">
+                                <span class="text-lb-md font-bold">Berita</span>
+                            </a>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+
+            <!-- Ikon dengan Button dan aria label -->
+            <div class="icons-container flex w-[163px] justify-end items-center gap-8 self-stretch">
+                <button type="button" class="icon-navbar w-8 h-8 flex justify-center items-center cursor-pointer"
+                    aria-label="Notification">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 32 32" fill="none">
+                        <path fill-rule="evenodd" clip-rule="evenodd"
+                            d="M15.9998 4C20.4181 4 23.9998 7.58166 23.9998 11.9999C23.9998 14.5508 23.9998 17.1122 23.9998 18.6667C23.9998 22.6667 26.6665 24 26.6665 24L5.33317 24C5.33317 24 7.99984 22.6667 7.99984 18.6667C7.99984 17.1122 7.99984 14.5508 7.99984 11.9999C7.99984 7.58166 11.5816 4 15.9998 4V4Z"
+                            stroke="#FFF0D1" stroke-linejoin="round" />
+                        <path
+                            d="M13.3332 24C13.3332 25.4728 14.5271 26.6667 15.9998 26.6667C17.4726 26.6667 18.6665 25.4728 18.6665 24"
+                            stroke="#FFF0D1" />
+                    </svg>
+                </button>
+                <button type="button" class="icon-navbar w-8 h-8 flex justify-center items-center cursor-pointer"
+                    aria-label="Profile">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 32 32" fill="none">
+                        <path
+                            d="M7.3335 26C7.3335 26 12.0002 24 13.3335 22.6667C14.6668 21.3333 10.6668 21.3333 10.6668 14.6667C10.6668 8 16.0002 8 16.0002 8C16.0002 8 21.3335 8 21.3335 14.6667C21.3335 21.3333 17.3335 21.3333 18.6668 22.6667C20.0002 24 24.6668 26 24.6668 26"
+                            stroke="#FFF0D1" stroke-linecap="round" />
+                        <path fill-rule="evenodd" clip-rule="evenodd"
+                            d="M15.9998 29.3334C23.3636 29.3334 29.3332 23.3638 29.3332 16C29.3332 8.63622 23.3636 2.66669 15.9998 2.66669C8.63604 2.66669 2.6665 8.63622 2.6665 16C2.6665 23.3638 8.63604 29.3334 15.9998 29.3334Z"
+                            stroke="#FFF0D1" />
+                    </svg>
+                </button>
+            </div>
+        </div>
+    </nav>
+    <!-- Nave End -->
+
+    <!-- Introduction -->
+    <section class="flex px-20 pb-20 flex-col items-center gap-20 self-stretch min-w-screen-lg">
+        <section
+            class="flex h-[468px] py-6 flex-col items-start self-stretch rounded-2xl border-2 border-[#FDC874] bg-[#FEE0AA]">
+            <header class="flex flex-col justify-center items-center gap-2.5 self-stretch">
+                <div
+                    class="vertical-container py-6 px-20 rounded-[80px] bg-gold shadow-[0_8px_8px_rgba(0,0,0,0.25)] text-secondary">
+                    <h1 class="text-h-lg">
+                        SecureByte Edu
+                    </h1>
+                </div>
+            </header>
+
+            <div class="flex px-20 justify-between items-start flex-grow self-stretch">
+                <article
+                    class="flex flex-col justify-center items-center gap-2 flex-grow self-stretch flex-basis-[200px] w-full">
+                    <div class="flex flex-col justify-center items-center self-stretch">
+                        <div class="flex flex-col justify-center items-center flex-grow self-stretch text-secondary">
+                            <h2 class="text-tl-md">
+                                Belajar Keamanan Siber: Perlindungan Digital Dimulai di Sini
+                            </h2>
+                        </div>
+                        <div class="flex flex-col justify-center items-center flex-grow self-stretch text-secondary">
+                            <p class="text-p-md">
+                                "Bangun pengetahuanmu tentang ancaman siber, mulai dari dasar-dasar keamanan jaringan
+                                hingga
+                                perlindungan tingkat lanjut."
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="flex flex-col justify-center items-start self-stretch">
+                        <div class="flex py-1.5 px-2.5 items-center gap-2.5 self-stretch text-secondary">
+                            <span class="text-lb-md">Kunjungi Modul</span>
+                        </div>
+                        <!-- Button -->
+                        <!-- Button Box Secondary -->
+                        <button type="submit"
+                            class="inline-flex h-14 px-8 justify-center items-center flex-shrink-0 rounded-lg bg-blackLayer-0 hover:bg-blackLayer-1 active:border-2 active:border-blackLayer-4 active:bg-blackLayer-0 transition-transform duration-300 ease-in-out hover:scale-90 active:scale-100">
+                            <div class="flex justify-center items-center gap-4 text-primary">
+
+                                <!-- Icon Left (Hidden by Default) -->
+                                <div class="flex w-6 h-6 justify-center items-center flex-shrink-0 hidden">
+
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                                        fill="none">
+                                        <path d="M21 12L3 12" stroke="currentColor" stroke-linecap="round" />
+                                        <path d="M9 6L3 12L9 18" stroke="currentColor" stroke-linecap="round" />
+                                    </svg>
+                                </div>
+
+                                <!-- Text Container -->
+                                <span class="text-lb-sm">Create Account</span>
+
+                                <!-- Icon Right (Hidden by Default) -->
+                                <div class="flex w-6 h-6 justify-center items-center flex-shrink-0 ">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                                        fill="none">
+                                        <path d="M3 12L21 12" stroke="currentColor" stroke-linecap="round" />
+                                        <path d="M15 18L21 12L15 6" stroke="currentColor" stroke-linecap="round" />
+                                    </svg>
+                                </div>
+                            </div>
+                        </button>
+                    </div>
+                </article>
+                <div
+                    class="flex justify-center items-center gap-2.5 flex-grow  self-stretch flex-basis-[150px] bg-headline-image bg-no-repeat bg-center bg-cover w-full">
+                </div>
+            </div>
+
+        </section>
+
+        <!-- Headline  Line -->
+        <section class="shape-line flex justify-between items-center flex-grow self-stretch">
+
+            <!-- Left Container -->
+            <div
+                class="container flex flex-col items-center justify-center self-stretch gap-2.5 px-4 relative grow shrink-0 basis-0 min-w-0">
+                <div class="rounded-rectangle-left self-stretch shrink-0 relative bg-cover z-10 rounded-lg">
+                    <svg class="svg-responsive w-full h-2" viewBox="0 0 293 8" fill="none"
+                        xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="none">
+                        <rect width="292.5" height="6" rx="4" fill="url(#paint0_linear_168_2011)" />
+                        <defs>
+                            <linearGradient id="paint0_linear_168_2011" x1="11.5842" y1="4.0396" x2="273.676"
+                                y2="4.03978" gradientUnits="userSpaceOnUse">
+                                <stop stop-color="#FFF9ED" stop-opacity="0.2" />
+                                <stop offset="1" stop-color="#64E9FF" />
+                            </linearGradient>
+                        </defs>
+                    </svg>
+                </div>
+            </div>
+
+            <!-- Vertical Container -->
+            <div class="vertical-container py-6 px-20 rounded-[80px] bg-gold shadow-[0_8px_8px_rgba(0,0,0,0.25)]">
+                <h2 class="tl-large text-[24px] leading-[40px] font-semibold">
+                    CYBERSECURITY
+                </h2>
+            </div>
+
+            <!-- Right Container -->
+            <div
+                class="container flex flex-col items-center justify-center self-stretch gap-2.5 px-4 relative grow shrink-0 basis-0 min-w-0">
+                <div class="rounded-rectangle-right self-stretch shrink-0 relative bg-cover z-10 rounded-lg">
+                    <svg class="svg-responsive w-full h-2" viewBox="0 0 293 8" fill="none"
+                        xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="none">
+                        <rect width="292.5" height="6" rx="4" fill="url(#paint0_linear_168_2012)" />
+                        <defs>
+                            <linearGradient id="paint0_linear_168_2012" x1="0.5" y1="4" x2="293" y2="4.00032"
+                                gradientUnits="userSpaceOnUse">
+                                <stop stop-color="#64E9FF" />
+                                <stop offset="1" stop-color="#FFF9ED" stop-opacity="0.2" />
+                            </linearGradient>
+                        </defs>
+                    </svg>
+                </div>
+            </div>
+
+        </section>
+
+
+        <section class="introduction-container flex flex-col justify-center items-center gap-8 py-6 w-full">
+            <header class=" header-section flex min-w-[1024px] px-20 justify-between items-center w-full">
+                <div class="header-content flex justify-between items-center flex-grow">
+                    <div class="heading-container flex pr-6 flex-col items-start flex-grow w-full">
+                        <div class="title flex p-1 items-center w-full text-secondary">
+                            <h1 class="text-h-lg">Introduction</h1>
+                        </div>
+
+                        <div class="subtitle-container flex gap-4 p-2 justify-between items-center w-full">
+                            <div class=" subtitle-wrapper flex justify-center items-center whitespace-nowrap">
+                                <h2 class="text-2xl text-secondary">To SecureByte Edu</h2>
+                            </div>
+                            <div class="variant-shape flex items-center justify-center px-2 ">
+                                <!-- Shape Line -->
+                                <svg class="w-full h-2" viewBox="0 0 382 8" fill="none"
+                                    xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="none">
+                                    <rect y="2" width="382" height="4" fill="#FDC874" />
+                                </svg>
+
+                                <!-- Arrow Shape -->
+                                <svg class="w-11 h-10" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 45 40"
+                                    fill="none">
+                                    <!-- file SVG -->
+                                    <path
+                                        d="M42.0002 20L3.62305 20M42.0002 20L26.6494 36.6666M42.0002 20L26.6494 3.33331"
+                                        stroke="#FDC874" stroke-width="6" stroke-linecap="round"
+                                        stroke-linejoin="round" />
+                                </svg>
+                            </div>
+                        </div>
+
+                    </div>
+
+                    <div
+                        class="description-container flex px-10 py-2.5 pl-10 justify-center items-center gap-2.5 flex-grow w-full">
+                        <p class="text-p-md text-gray-700 leading-relaxed">
+                            Selamat datang di Secure Byte Edu, platform edukasi yang bertujuan meningkatkan kesadaran
+                            masyarakat umum tentang keamanan siber. Kami menyediakan beragam materi untuk membantu Anda
+                            memahami ancaman digital dan cara melindungi diri secara efektif. Secure Byte Edu menawarkan
+                            modul pembelajaran yang mudah diakses dan praktis, yang dirancang agar siapa saja, bahkan
+                            yang masih awam, dapat dengan cepat memahami pentingnya keamanan digital dalam kehidupan
+                            sehari-hari.
+                        </p>
+                    </div>
+                </div>
+            </header>
+
+            <section class="content-section flex px-20 justify-between items-center ">
+                <!-- Left Content -->
+                <div class="left-content flex items-center gap-2.5 flex-grow w-full">
+                    <div class="image-outer-wrapper flex p-4 items-center gap-2.5 rounded-[24px_108px] bg-gold-out">
+                        <img src="../../dist/img/Logo.png" alt="SecureByte Edu" class="w-64 h-auto rounded-lg">
+                    </div>
+                </div>
+
+                <!-- Right Content -->
+                <article class="right-content flex px-10 flex-col justify-center items-center flex-grow w-full">
+                    <div class="flex p-4 flex-col items-center gap-4 self-stretch rounded-2xl bg-gold-out">
+                        <!-- Header Container -->
+                        <div class="flex flex-col justify-center items-center self-stretch">
+                            <div class="flex justify-center items-center gap-2.5 self-stretch">
+                                <h4 class="text-tl-sm text-center text-secondary">Program Kreativitas (PKM)</h4>
+                            </div>
+
+                            <!-- file SVG -->
+                            <svg width="100%" height="2" viewBox="0 0 320 2" fill="none"
+                                xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="none">
+                                <rect width="320" height="2" fill="url(#paint0_linear_695_4036)" />
+                                <defs>
+                                    <linearGradient id="paint0_linear_695_4036" x1="2.01166e-06" y1="1" x2="320"
+                                        y2="0.999856" gradientUnits="userSpaceOnUse">
+                                        <stop stop-color="#092C4C" />
+                                        <stop offset="0.5" stop-color="#FFF9ED" stop-opacity="0.2" />
+                                        <stop offset="1" stop-color="#092C4C" />
+                                    </linearGradient>
+                                </defs>
+                            </svg>
+                        </div>
+
+                        <!-- Body Container -->
+                        <div class="flex p-2.5 justify-center items-center gap-2.5 self-stretch">
+                            <p class="text-center text-secondary text-p-sm">
+                                Program Kreativitas Mahasiswa (PKM) adalah program yang diselenggarakan oleh Direktorat
+                                Pendidikan Tinggi (Dikti) untuk mendorong mahasiswa mengembangkan kreativitas, inovasi,
+                                dan keahlian profesional. Program ini bertujuan untuk meningkatkan kualitas mahasiswa
+                                agar
+                                mampu berkontribusi secara akademis dan profesional di masyarakat. PKM memiliki tujuh
+                                kategori kegiatan: PKM-Penelitian, PKM-Penerapan Teknologi, PKM-Kewirausahaan,
+                                PKM-Pengabdian
+                                Masyarakat, PKM-Karsa Cipta, PKM-Artikel Ilmiah, dan PKM-Gagasan Tertulis. Sebagian
+                                besar
+                                program ini diperlombakan dalam Pekan Ilmiah Mahasiswa Nasional (PIMNAS).
+                            </p>
+                        </div>
+                    </div>
+                </article>
+            </section>
+        </section>
+
+    </section>
+
+    <!-- Introduction End -->
+
+
+    <!-- Modul Container -->
+    <section class="flex px-20 pb-20 flex-col items-center gap-20 self-stretch min-w-screen-lg">
+        <!-- Headline  Line -->
+        <section class="shape-line flex justify-between items-center flex-grow self-stretch">
+
+            <!-- Left Container -->
+            <div
+                class="container flex flex-col items-center justify-center self-stretch gap-2.5 px-4 relative grow shrink-0 basis-0 min-w-0">
+                <div class="rounded-rectangle-left self-stretch shrink-0 relative bg-cover z-10 rounded-lg">
+                    <svg class="svg-responsive w-full h-2" viewBox="0 0 293 8" fill="none"
+                        xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="none">
+                        <rect width="292.5" height="6" rx="4" fill="url(#paint0_linear_168_2011)" />
+                        <defs>
+                            <linearGradient id="paint0_linear_168_2011" x1="11.5842" y1="4.0396" x2="273.676"
+                                y2="4.03978" gradientUnits="userSpaceOnUse">
+                                <stop stop-color="#FFF9ED" stop-opacity="0.2" />
+                                <stop offset="1" stop-color="#64E9FF" />
+                            </linearGradient>
+                        </defs>
+                    </svg>
+                </div>
+            </div>
+
+            <!-- Vertical Container -->
+            <div class="vertical-container py-6 px-20 rounded-[80px] bg-gold shadow-[0_8px_8px_rgba(0,0,0,0.25)]">
+                <h2 class="tl-large text-[24px] leading-[40px] font-semibold">
+                    MODUL PEMBELAJARAN
+                </h2>
+            </div>
+
+            <!-- Right Container -->
+            <div
+                class="container flex flex-col items-center justify-center self-stretch gap-2.5 px-4 relative grow shrink-0 basis-0 min-w-0">
+                <div class="rounded-rectangle-right self-stretch shrink-0 relative bg-cover z-10 rounded-lg">
+                    <svg class="svg-responsive w-full h-2" viewBox="0 0 293 8" fill="none"
+                        xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="none">
+                        <rect width="292.5" height="6" rx="4" fill="url(#paint0_linear_168_2012)" />
+                        <defs>
+                            <linearGradient id="paint0_linear_168_2012" x1="0.5" y1="4" x2="293" y2="4.00032"
+                                gradientUnits="userSpaceOnUse">
+                                <stop stop-color="#64E9FF" />
+                                <stop offset="1" stop-color="#FFF9ED" stop-opacity="0.2" />
+                            </linearGradient>
+                        </defs>
+                    </svg>
+                </div>
+            </div>
+
+        </section>
+
+        <!-- Headline Line END -->
+
+        <!-- Module Box -->
+        <!-- Module Container 1-->
+        <div class="">
+            <article class="module-container flex min-w-[1024px] px-10 justify-between items-center self-stretch">
+
+                <!-- Image Card -->
+                <div
+                    class="image-card flex w-[392px] p-2 flex-col justify-center items-center gap-2.5 flex-shrink-0 self-stretch">
+                    <div
+                        class="flex p-0.5 flex-col justify-center items-center gap-2.5 rounded-[18px] bg-gradient-to-r from-[#FFF0D1] to-[#DDB96F] shadow-[0px_8px_8px_rgba(0,0,0,0.25)]">
+                        <img src="../../dist/img/Modul-1.jpg" alt="Byte-Sized Learning"
+                            class="w-[232px] h-[200px] rounded-2xl bg-gold-in">
+                    </div>
+                </div>
+
+                <!-- shape-line -->
+                <div class="flow-points flex h-[404px] justify-center items-center relative flex-grow">
+                    <div class="flex flex-col justify-center items-center relative h-[404px]">
+                        <!-- Spacer akan berada di belakang ellipse -->
+                        <svg class="w-[8px] h-[404px] absolute top-0 left-[calc(50%-4px)] z-0"
+                            xmlns="http://www.w3.org/2000/svg" width="8" height="404" viewBox="0 0 8 404" fill="none">
+                            <rect width="8" height="404" fill="url(#paint0_linear_723_4153)" />
+                            <defs>
+                                <linearGradient id="paint0_linear_723_4153" x1="4" y1="0" x2="4" y2="404"
+                                    gradientUnits="userSpaceOnUse">
+                                    <stop stop-color="#FFF9ED" stop-opacity="0" />
+                                    <stop offset="1" stop-color="#64E9FF" />
+                                </linearGradient>
+                            </defs>
+                        </svg>
+
+                        <!-- Ellipse akan berada di atas spacer -->
+                        <svg class="w-[50px] h-[50px] z-[1] relative" xmlns="http://www.w3.org/2000/svg"
+                            viewBox="0 0 50 50" fill="none">
+                            <circle cx="25" cy="25" r="25" fill="#FFF0D1" />
+                        </svg>
+                    </div>
+                </div>
+
+                <div
+                    class="text-container flex w-[392px] py-4 flex-col justify-center items-center gap-2.5 flex-shrink-0 self-stretch">
+                    <div class=" text-card flex p-4 flex-col items-center gap-4 self-stretch rounded-2xl bg-gold-out">
+                        <!-- Header Container -->
+                        <div class="flex flex-col justify-center items-center self-stretch">
+                            <div class="flex justify-center items-center gap-2.5 self-stretch">
+                                <h4 class="text-tl-sm text-center text-secondary">Program Kreativitas (PKM)</h4>
+                            </div>
+
+                            <!-- file SVG -->
+                            <svg width="100%" height="2" viewBox="0 0 320 2" fill="none"
+                                xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="none">
+                                <rect width="320" height="2" fill="url(#paint0_linear_695_4036)" />
+                                <defs>
+                                    <linearGradient id="paint0_linear_695_4036" x1="2.01166e-06" y1="1" x2="320"
+                                        y2="0.999856" gradientUnits="userSpaceOnUse">
+                                        <stop stop-color="#092C4C" />
+                                        <stop offset="0.5" stop-color="#FFF9ED" stop-opacity="0.2" />
+                                        <stop offset="1" stop-color="#092C4C" />
+                                    </linearGradient>
+                                </defs>
+                            </svg>
+                        </div>
+
+                        <!-- Body Container -->
+                        <div class="flex p-2.5 justify-center items-center gap-2.5 self-stretch">
+                            <p class="text-center text-secondary text-p-sm">
+                                Program Kreativitas Mahasiswa (PKM) adalah program yang diselenggarakan oleh Direktorat
+                                Pendidikan Tinggi (Dikti) untuk mendorong mahasiswa mengembangkan kreativitas, inovasi,
+                                dan keahlian profesional. Program ini bertujuan untuk meningkatkan kualitas mahasiswa
+                                agar
+                                mampu berkontribusi secara akademis dan profesional di masyarakat. PKM memiliki tujuh
+                                kategori kegiatan: PKM-Penelitian, PKM-Penerapan Teknologi, PKM-Kewirausahaan,
+                                PKM-Pengabdian
+                                Masyarakat, PKM-Karsa Cipta, PKM-Artikel Ilmiah, dan PKM-Gagasan Tertulis. Sebagian
+                                besar
+                                program ini diperlombakan dalam Pekan Ilmiah Mahasiswa Nasional (PIMNAS).
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
+            </article>
+
+            <!-- module 2 -->
+            <article class="module-container flex min-w-[1024px] px-10 justify-between items-center self-stretch">
+
+                <div
+                    class="text-container flex w-[392px] py-4 flex-col justify-center items-center gap-2.5 flex-shrink-0 self-stretch">
+                    <div class=" text-card flex p-4 flex-col items-center gap-4 self-stretch rounded-2xl bg-gold-out">
+                        <!-- Header Container -->
+                        <div class="flex flex-col justify-center items-center self-stretch">
+                            <div class="flex justify-center items-center gap-2.5 self-stretch">
+                                <h4 class="text-tl-sm text-center text-secondary">Program Kreativitas (PKM)</h4>
+                            </div>
+
+                            <!-- file SVG -->
+                            <svg width="100%" height="2" viewBox="0 0 320 2" fill="none"
+                                xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="none">
+                                <rect width="320" height="2" fill="url(#paint0_linear_695_4036)" />
+                                <defs>
+                                    <linearGradient id="paint0_linear_695_4036" x1="2.01166e-06" y1="1" x2="320"
+                                        y2="0.999856" gradientUnits="userSpaceOnUse">
+                                        <stop stop-color="#092C4C" />
+                                        <stop offset="0.5" stop-color="#FFF9ED" stop-opacity="0.2" />
+                                        <stop offset="1" stop-color="#092C4C" />
+                                    </linearGradient>
+                                </defs>
+                            </svg>
+                        </div>
+
+                        <!-- Body Container -->
+                        <div class="flex p-2.5 justify-center items-center gap-2.5 self-stretch">
+                            <p class="text-center text-secondary text-p-sm">
+                                Program Kreativitas Mahasiswa (PKM) adalah program yang diselenggarakan oleh Direktorat
+                                Pendidikan Tinggi (Dikti) untuk mendorong mahasiswa mengembangkan kreativitas, inovasi,
+                                dan keahlian profesional. Program ini bertujuan untuk meningkatkan kualitas mahasiswa
+                                agar
+                                mampu berkontribusi secara akademis dan profesional di masyarakat. PKM memiliki tujuh
+                                kategori kegiatan: PKM-Penelitian, PKM-Penerapan Teknologi, PKM-Kewirausahaan,
+                                PKM-Pengabdian
+                                Masyarakat, PKM-Karsa Cipta, PKM-Artikel Ilmiah, dan PKM-Gagasan Tertulis. Sebagian
+                                besar
+                                program ini diperlombakan dalam Pekan Ilmiah Mahasiswa Nasional (PIMNAS).
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- shape-line -->
+                <div class="flow-points flex h-[404px] justify-center items-center relative flex-grow">
+                    <div class="flex flex-col justify-center items-center relative h-[404px]">
+                        <!-- Spacer akan berada di belakang ellipse -->
+                        <svg class="w-[8px] h-[404px] absolute top-0 left-[calc(50%-4px)] z-0"
+                            xmlns="http://www.w3.org/2000/svg" width="8" height="404" viewBox="0 0 8 404" fill="none">
+                            <rect width="8" height="404" fill="url(#paint0_linear_734_4156)" />
+                            <defs>
+                                <linearGradient id="paint0_linear_734_4156" x1="4" y1="0" x2="4" y2="404"
+                                    gradientUnits="userSpaceOnUse">
+                                    <stop stop-color="#64E9FF" />
+                                    <stop offset="1" stop-color="#FFF9ED" stop-opacity="0" />
+                                </linearGradient>
+                            </defs>
+                        </svg>
+
+                        <!-- Ellipse akan berada di atas spacer -->
+                        <svg class="w-[50px] h-[50px] z-[1] relative" xmlns="http://www.w3.org/2000/svg"
+                            viewBox="0 0 50 50" fill="none">
+                            <circle cx="25" cy="25" r="25" fill="#FFF0D1" />
+                        </svg>
+                    </div>
+                </div>
+
+                <!-- Image Card -->
+                <div
+                    class="image-card flex w-[392px] p-2 flex-col justify-center items-center gap-2.5 flex-shrink-0 self-stretch">
+                    <div
+                        class="flex p-0.5 flex-col justify-center items-center gap-2.5 rounded-[18px] bg-gradient-to-r from-[#FFF0D1] to-[#DDB96F] shadow-[0px_8px_8px_rgba(0,0,0,0.25)]">
+                        <img src="../../dist/img/Modul-1.jpg" alt="Byte-Sized Learning"
+                            class="w-[232px] h-[200px]  rounded-2xl bg-gold-in">
+                    </div>
+                </div>
+
+
+
+            </article>
+        </div>
+
+        <!-- Modul Box End -->
+
+
+
+        <!-- Headline Box -->
+        <section class="headline-box w-full relative flex flex-col items-center justify-center self-grow ">
+
+            <!-- Container dengan teks sekunder -->
+            <div
+                class="container h-48 text-secondary flex flex-col justify-center items-center gap-2.5 flex-grow rounded-[140px] bg-gold shadow-[0_8px_8px_rgba(0,0,0,0.25)]">
+
+                <!-- Subheading Container -->
+                <div class="subheading-container flex flex-col justify-center items-center gap-2.75 self-stretch">
+                    <h1 class="text-h1 font-semibold">
+                        CYBERSECURITY LEARNING
+                    </h1>
+                    <h3 class="tl-medium text-h3 font-semibold">
+                        USED BY SecureByte EDU
+                    </h3>
+                </div>
+            </div>
+
+            <!-- Shape Button -->
+            <div class="relative -top-10 flex p-2.5 flex-col items-start rounded-[50px] bg-dark-glass ">
+                <!-- Button Circle Secondary -->
+                <button type="submit"
+                    class="inline-flex h-14 px-3 flex-col justify-center items-center flex-shrink-0 rounded-full bg-blackLayer-0 hover:bg-blackLayer-1 active:border-2 active:border-blackLayer-4 active:bg-blackLayer-0 transition-transform duration-300 ease-in-out hover:scale-90 active:scale-100">
+                    <div class="flex py-3.5 px-10 flex-col justify-center items-center gap-2.5 flex-grow">
+                        <div class="flex justify-center items-center gap-6 text-primary">
+
+                            <!-- Icon Left (Hidden by Default) -->
+                            <div class="flex w-6 h-6 justify-center items-center flex-shrink-0 hidden">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                                    fill="none">
+                                    <path d="M21 12L3 12" stroke="currentColor" stroke-linecap="round" />
+                                    <path d="M9 6L3 12L9 18" stroke="currentColor" stroke-linecap="round" />
+                                </svg>
+                            </div>
+
+                            <!-- Text Container -->
+                            <span class="text-lb-sm font-semibold flex justify-center items-center">Modul Lainnya</span>
+
+                            <!-- Icon Right (Hidden by Default) -->
+                            <div class="flex w-6 h-6 justify-center items-center flex-shrink-0 ">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                                    fill="none">
+                                    <path d="M3 12L21 12" stroke="currentColor" stroke-linecap="round" />
+                                    <path d="M15 18L21 12L15 6" stroke="currentColor" stroke-linecap="round" />
+                                </svg>
+                            </div>
+                        </div>
+                    </div>
+                </button>
+            </div>
+        </section>
+    </section>
+
+    <!-- Modul Container End -->
+
+
+    <!-- News Container -->
+    <section class="flex px-20 pb-20 flex-col items-center gap-20 self-stretch min-w-screen-lg">
+        <!-- Headline  Line -->
+        <section class="shape-line flex justify-between items-center flex-grow self-stretch">
+
+            <!-- Left Container -->
+            <div
+                class="container flex flex-col items-center justify-center self-stretch gap-2.5 px-4 relative grow shrink-0 basis-0 min-w-0">
+                <div class="rounded-rectangle-left self-stretch shrink-0 relative bg-cover z-10 rounded-lg">
+                    <svg class="svg-responsive w-full h-2" viewBox="0 0 293 8" fill="none"
+                        xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="none">
+                        <rect width="292.5" height="6" rx="4" fill="url(#paint0_linear_168_2011)" />
+                        <defs>
+                            <linearGradient id="paint0_linear_168_2011" x1="11.5842" y1="4.0396" x2="273.676"
+                                y2="4.03978" gradientUnits="userSpaceOnUse">
+                                <stop stop-color="#FFF9ED" stop-opacity="0.2" />
+                                <stop offset="1" stop-color="#64E9FF" />
+                            </linearGradient>
+                        </defs>
+                    </svg>
+                </div>
+            </div>
+
+            <!-- Vertical Container -->
+            <div class="vertical-container py-6 px-20 rounded-[80px] bg-gold shadow-[0_8px_8px_rgba(0,0,0,0.25)]">
+                <h2 class="tl-large text-[24px] leading-[40px] font-semibold">
+                    BERITA
+                </h2>
+            </div>
+
+            <!-- Right Container -->
+            <div
+                class="container flex flex-col items-center justify-center self-stretch gap-2.5 px-4 relative grow shrink-0 basis-0 min-w-0">
+                <div class="rounded-rectangle-right self-stretch shrink-0 relative bg-cover z-10 rounded-lg">
+                    <svg class="svg-responsive w-full h-2" viewBox="0 0 293 8" fill="none"
+                        xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="none">
+                        <rect width="292.5" height="6" rx="4" fill="url(#paint0_linear_168_2012)" />
+                        <defs>
+                            <linearGradient id="paint0_linear_168_2012" x1="0.5" y1="4" x2="293" y2="4.00032"
+                                gradientUnits="userSpaceOnUse">
+                                <stop stop-color="#64E9FF" />
+                                <stop offset="1" stop-color="#FFF9ED" stop-opacity="0.2" />
+                            </linearGradient>
+                        </defs>
+                    </svg>
+                </div>
+            </div>
+
+        </section>
+
+        <!-- Headline Line END -->
+
+
+        <!-- News Container -->
+
+        <section class=" news-box flex flex-col items-center gap-2">
+            <!-- News 1 -->
+            <article
+                class="news-container flex p-5 px-7 justify-center items-center gap-6 max-w-[800px] rounded-lg bg-whiteLayer-3 shadow-md">
+                <div class="news-image w-[248px] h-[140px] rounded-md bg-example-image bg-cover bg-center"></div>
+
+                <!-- Content News -->
+                <section
+                    class="content-news flex flex-col justify-between items-start flex-grow self-stretch text-secondary">
+                    <!-- Content Section -->
+                    <header class="content-section flex flex-col items-center gap-4 self-stretch">
+                        <!-- Title Container -->
+                        <div class="title-container flex justify-start items-start gap-2 w-full">
+                            <div class="badge-container px-2 rounded-md text-white bg-red-500/10">
+                                <span class="text-sm font-semibold text-error">Top</span>
+                            </div>
+                            <h4 class="text-lb-md text-secondary">
+                                [Fiat x WSOT] Deposit, Trade and Win a Share of 28,800 Ardiansyah
+                            </h4>
+                        </div>
+
+                        <!-- News Description -->
+                        <p class="text-p-md text-secondary">
+                            Terjadi pada pukul 5 pagi ini, terjadi kebakaran yang menumpaskan beberapa nyawa.
+                        </p>
+                    </header>
+
+                    <!-- Timestamp -->
+                    <time datetime="2024-10-07" class="text-p-md text-gray-500">
+                        Oct 7, 2024
+                    </time>
+                </section>
+            </article>
+
+            <article
+                class="news-container flex p-5 px-7 justify-center items-center gap-6 max-w-[800px] rounded-lg bg-whiteLayer-3 shadow-md">
+                <div class="news-image w-[248px] h-[140px] rounded-md bg-example-image bg-cover bg-center"></div>
+
+                <!-- Content News -->
+                <section
+                    class="content-news flex flex-col justify-between items-start flex-grow self-stretch text-secondary">
+                    <!-- Content Section -->
+                    <header class="content-section flex flex-col items-center gap-4 self-stretch">
+                        <!-- Title Container -->
+                        <div class="title-container flex justify-start items-start gap-2 w-full">
+                            <div class="badge-container px-2 rounded-md text-white bg-red-500/10">
+                                <span class="text-sm font-semibold text-error">Top</span>
+                            </div>
+                            <h4 class="text-lb-md text-secondary">
+                                [Fiat x WSOT] Deposit, Trade and Win a Share of 28,800 Ardiansyah
+                            </h4>
+                        </div>
+
+                        <!-- News Description -->
+                        <p class="text-p-md text-secondary">
+                            Terjadi pada pukul 5 pagi ini, terjadi kebakaran yang menumpaskan beberapa nyawa.
+                        </p>
+                    </header>
+
+                    <!-- Timestamp -->
+                    <time datetime="2024-10-07" class="text-p-md text-gray-500">
+                        Oct 7, 2024
+                    </time>
+                </section>
+            </article>
+
+            <article
+                class="news-container flex p-5 px-7 justify-center items-center gap-6 max-w-[800px] rounded-lg bg-whiteLayer-3 shadow-md">
+                <div class="news-image w-[248px] h-[140px] rounded-md bg-example-image bg-cover bg-center"></div>
+
+                <!-- Content News -->
+                <section
+                    class="content-news flex flex-col justify-between items-start flex-grow self-stretch text-secondary">
+                    <!-- Content Section -->
+                    <header class="content-section flex flex-col items-center gap-4 self-stretch">
+                        <!-- Title Container -->
+                        <div class="title-container flex justify-start items-start gap-2 w-full">
+                            <div class="badge-container px-2 rounded-md text-white bg-red-500/10">
+                                <span class="text-sm font-semibold text-error">Top</span>
+                            </div>
+                            <h4 class="text-lb-md text-secondary">
+                                [Fiat x WSOT] Deposit, Trade and Win a Share of 28,800 Ardiansyah
+                            </h4>
+                        </div>
+
+                        <!-- News Description -->
+                        <p class="text-p-md text-secondary">
+                            Terjadi pada pukul 5 pagi ini, terjadi kebakaran yang menumpaskan beberapa nyawa.
+                        </p>
+                    </header>
+
+                    <!-- Timestamp -->
+                    <time datetime="2024-10-07" class="text-p-md text-gray-500">
+                        Oct 7, 2024
+                    </time>
+                </section>
+            </article>
+        </section>
+        <!-- News Container End -->
+
+
+
+        <!-- Headline Box -->
+        <section class="headline-box w-full relative flex flex-col items-center justify-center self-grow ">
+
+            <!-- Container dengan teks sekunder -->
+            <div
+                class="container h-48 text-secondary flex flex-col justify-center items-center gap-2.5 flex-grow rounded-[140px] bg-gold shadow-[0_8px_8px_rgba(0,0,0,0.25)]">
+
+                <!-- Subheading Container -->
+                <div class="subheading-container flex flex-col justify-center items-center gap-2.75 self-stretch">
+                    <h1 class="text-h1 font-semibold">
+                        CYBERSECURITY LEARNING
+                    </h1>
+                    <h3 class="tl-medium text-h3 font-semibold">
+                        USED BY SecureByte EDU
+                    </h3>
+                </div>
+            </div>
+
+            <!-- Shape Button -->
+            <div class="relative -top-10 flex p-2.5 flex-col items-start rounded-[50px] bg-dark-glass ">
+                <!-- Button Circle Secondary -->
+                <button type="submit"
+                    class="inline-flex h-14 px-3 flex-col justify-center items-center flex-shrink-0 rounded-full bg-blackLayer-0 hover:bg-blackLayer-1 active:border-2 active:border-blackLayer-4 active:bg-blackLayer-0 transition-transform duration-300 ease-in-out hover:scale-90 active:scale-100">
+                    <div class="flex py-3.5 px-10 flex-col justify-center items-center gap-2.5 flex-grow">
+                        <div class="flex justify-center items-center gap-6 text-primary">
+
+                            <!-- Icon Left (Hidden by Default) -->
+                            <div class="flex w-6 h-6 justify-center items-center flex-shrink-0 hidden">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                                    fill="none">
+                                    <path d="M21 12L3 12" stroke="currentColor" stroke-linecap="round" />
+                                    <path d="M9 6L3 12L9 18" stroke="currentColor" stroke-linecap="round" />
+                                </svg>
+                            </div>
+
+                            <!-- Text Container -->
+                            <span class="text-lb-sm font-semibold flex justify-center items-center"> Berita
+                                Lainnya</span>
+
+                            <!-- Icon Right (Hidden by Default) -->
+                            <div class="flex w-6 h-6 justify-center items-center flex-shrink-0 ">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                                    fill="none">
+                                    <path d="M3 12L21 12" stroke="currentColor" stroke-linecap="round" />
+                                    <path d="M15 18L21 12L15 6" stroke="currentColor" stroke-linecap="round" />
+                                </svg>
+                            </div>
+                        </div>
+                    </div>
+                </button>
+            </div>
+        </section>
+    </section>
+
+    <!-- News Container End -->
+
+
+    <!-- Profile Card  -->
+    <section class="flex px-20 pb-20 flex-col items-center gap-20 self-stretch min-w-screen-lg">
+        <!-- Headline  Line -->
+        <section class="shape-line flex justify-between items-center flex-grow self-stretch">
+
+            <!-- Left Container -->
+            <div
+                class="container flex flex-col items-center justify-center self-stretch gap-2.5 px-4 relative grow shrink-0 basis-0 min-w-0">
+                <div class="rounded-rectangle-left self-stretch shrink-0 relative bg-cover z-10 rounded-lg">
+                    <svg class="svg-responsive w-full h-2" viewBox="0 0 293 8" fill="none"
+                        xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="none">
+                        <rect width="292.5" height="6" rx="4" fill="url(#paint0_linear_168_2011)" />
+                        <defs>
+                            <linearGradient id="paint0_linear_168_2011" x1="11.5842" y1="4.0396" x2="273.676"
+                                y2="4.03978" gradientUnits="userSpaceOnUse">
+                                <stop stop-color="#FFF9ED" stop-opacity="0.2" />
+                                <stop offset="1" stop-color="#64E9FF" />
+                            </linearGradient>
+                        </defs>
+                    </svg>
+                </div>
+            </div>
+
+            <!-- Vertical Container -->
+            <div class="vertical-container py-6 px-20 rounded-[80px] bg-gold shadow-[0_8px_8px_rgba(0,0,0,0.25)]">
+                <h2 class="tl-large text-[24px] leading-[40px] font-semibold">
+                    PROFILE PENGEMBANG
+                </h2>
+            </div>
+
+            <!-- Right Container -->
+            <div
+                class="container flex flex-col items-center justify-center self-stretch gap-2.5 px-4 relative grow shrink-0 basis-0 min-w-0">
+                <div class="rounded-rectangle-right self-stretch shrink-0 relative bg-cover z-10 rounded-lg">
+                    <svg class="svg-responsive w-full h-2" viewBox="0 0 293 8" fill="none"
+                        xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="none">
+                        <rect width="292.5" height="6" rx="4" fill="url(#paint0_linear_168_2012)" />
+                        <defs>
+                            <linearGradient id="paint0_linear_168_2012" x1="0.5" y1="4" x2="293" y2="4.00032"
+                                gradientUnits="userSpaceOnUse">
+                                <stop stop-color="#64E9FF" />
+                                <stop offset="1" stop-color="#FFF9ED" stop-opacity="0.2" />
+                            </linearGradient>
+                        </defs>
+                    </svg>
+                </div>
+            </div>
+
+        </section>
+
+        <!-- Headline Line END -->
+
+
+        <!-- Profile Card -->
+
+        <section
+            class="profile-card-contaier flex p-8 justify-center items-center content-center gap-4 flex-wrap w-full">
+
+            <!-- Profile Card -->
+            <article
+                class="profile-card flex w-[220px] h-full min-h-[400px] px-4 py-8 gap-4 flex-col justify-between rounded-3xl border-2 border-primary bg-radial-primary shadow-md">
+                <!-- Image Container (Atas) -->
+                <figure class="image-container w-full flex justify-center p-2 items-center rounded-full bg-glass">
+                    <div class="w-[160px] h-[160px] rounded-full bg-gold"></div>
+                </figure>
+
+                <!-- Info Container (Tengah) -->
+                <div class="input-container flex flex-col items-center gap-2 w-full text-center flex-grow">
+                    <div class="flex justify-center items-center gap-2.5 border-b-2 border-secondary text-secondary">
+                        <h3 class="text-tl-sm font-bold">Ardiansyah</h3>
+                    </div>
+                    <h4 class="text-tl-sm">Tekom E</h4>
+                </div>
+
+                <!-- Button (Bawah) -->
+                <button type="submit"
+                    class="inline-flex h-12 px-6 justify-center items-center rounded-full bg-blackLayer-0 hover:bg-blackLayer-1 active:border-2 active:border-blackLayer-4 active:bg-blackLayer-0 transition-transform duration-300 ease-in-out hover:scale-90 active:scale-100">
+                    <div class="flex justify-center items-center gap-4 text-primary">
+                        <!-- Icon Left -->
+                        <div class="flex w-5 h-5 justify-center items-center">
+                            <!-- SVG Icon -->
+                            <svg width="32" height="32" viewBox="0 0 32 32" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path fill-rule="evenodd" clip-rule="evenodd"
+                                    d="M0 16C0 7.16344 7.16344 0 16 0C24.8366 0 32 7.16344 32 16C32 24.8366 24.8366 32 16 32C7.16344 32 0 24.8366 0 16ZM8.2 13.3V24H11.6V13.3H8.2ZM8 9.9C8 11 8.8 11.8 9.9 11.8C11 11.8 11.8 11 11.8 9.9C11.8 8.8 11 8 9.9 8C8.9 8 8 8.8 8 9.9ZM20.6 24H23.8V17.4C23.8 14.1 21.8 13 19.9 13C18.2 13 17 14.1 16.7 14.8V13.3H13.5V24H16.9V18.3C16.9 16.8 17.9 16 18.9 16C19.9 16 20.6 16.5 20.6 18.2V24Z"
+                                    fill="#FFF0D1" />
+                            </svg>
+                        </div>
+                        <!-- Button Text -->
+                        <span class="text-lb-md font-semibold">LinkedIn</span>
+                    </div>
+                </button>
+            </article>
+
+            <!-- Profile Card -->
+            <article
+                class="profile-card flex w-[220px] h-full min-h-[400px] px-4 py-8 gap-4 flex-col justify-between rounded-3xl border-2 border-primary bg-radial-primary shadow-md">
+                <!-- Image Container (Atas) -->
+                <figure class="image-container w-full flex justify-center p-2 items-center rounded-full bg-glass">
+                    <div class="w-[160px] h-[160px] rounded-full bg-gold"></div>
+                </figure>
+
+                <!-- Info Container (Tengah) -->
+                <div class="input-container flex flex-col items-center gap-2 w-full text-center flex-grow">
+                    <div class="flex justify-center items-center gap-2.5 border-b-2 border-secondary text-secondary">
+                        <h3 class="text-tl-sm font-bold">Ardiansyah</h3>
+                    </div>
+                    <h4 class="text-tl-sm">Tekom E</h4>
+                </div>
+
+                <!-- Button (Bawah) -->
+                <button type="submit"
+                    class="inline-flex h-12 px-6 justify-center items-center rounded-full bg-blackLayer-0 hover:bg-blackLayer-1 active:border-2 active:border-blackLayer-4 active:bg-blackLayer-0 transition-transform duration-300 ease-in-out hover:scale-90 active:scale-100">
+                    <div class="flex justify-center items-center gap-4 text-primary">
+                        <!-- Icon Left -->
+                        <div class="flex w-5 h-5 justify-center items-center">
+                            <!-- SVG Icon -->
+                            <svg width="32" height="32" viewBox="0 0 32 32" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path fill-rule="evenodd" clip-rule="evenodd"
+                                    d="M0 16C0 7.16344 7.16344 0 16 0C24.8366 0 32 7.16344 32 16C32 24.8366 24.8366 32 16 32C7.16344 32 0 24.8366 0 16ZM8.2 13.3V24H11.6V13.3H8.2ZM8 9.9C8 11 8.8 11.8 9.9 11.8C11 11.8 11.8 11 11.8 9.9C11.8 8.8 11 8 9.9 8C8.9 8 8 8.8 8 9.9ZM20.6 24H23.8V17.4C23.8 14.1 21.8 13 19.9 13C18.2 13 17 14.1 16.7 14.8V13.3H13.5V24H16.9V18.3C16.9 16.8 17.9 16 18.9 16C19.9 16 20.6 16.5 20.6 18.2V24Z"
+                                    fill="#FFF0D1" />
+                            </svg>
+                        </div>
+                        <!-- Button Text -->
+                        <span class="text-lb-md font-semibold">LinkedIn</span>
+                    </div>
+                </button>
+            </article>
+
+
+            <!-- Profile Card -->
+            <article
+                class="profile-card flex w-[220px] h-full min-h-[400px] px-4 py-8 gap-4 flex-col justify-between rounded-3xl border-2 border-primary bg-radial-primary shadow-md">
+                <!-- Image Container (Atas) -->
+                <figure class="image-container w-full flex justify-center p-2 items-center rounded-full bg-glass">
+                    <div class="w-[160px] h-[160px] rounded-full bg-gold"></div>
+                </figure>
+
+                <!-- Info Container (Tengah) -->
+                <div class="input-container flex flex-col items-center gap-2 w-full text-center flex-grow">
+                    <div class="flex justify-center items-center gap-2.5 border-b-2 border-secondary text-secondary">
+                        <h3 class="text-tl-sm font-bold">Ardiansyah</h3>
+                    </div>
+                    <h4 class="text-tl-sm">Tekom E</h4>
+                </div>
+
+                <!-- Button (Bawah) -->
+                <button type="submit"
+                    class="inline-flex h-12 px-6 justify-center items-center rounded-full bg-blackLayer-0 hover:bg-blackLayer-1 active:border-2 active:border-blackLayer-4 active:bg-blackLayer-0 transition-transform duration-300 ease-in-out hover:scale-90 active:scale-100">
+                    <div class="flex justify-center items-center gap-4 text-primary">
+                        <!-- Icon Left -->
+                        <div class="flex w-5 h-5 justify-center items-center">
+                            <!-- SVG Icon -->
+                            <svg width="32" height="32" viewBox="0 0 32 32" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path fill-rule="evenodd" clip-rule="evenodd"
+                                    d="M0 16C0 7.16344 7.16344 0 16 0C24.8366 0 32 7.16344 32 16C32 24.8366 24.8366 32 16 32C7.16344 32 0 24.8366 0 16ZM8.2 13.3V24H11.6V13.3H8.2ZM8 9.9C8 11 8.8 11.8 9.9 11.8C11 11.8 11.8 11 11.8 9.9C11.8 8.8 11 8 9.9 8C8.9 8 8 8.8 8 9.9ZM20.6 24H23.8V17.4C23.8 14.1 21.8 13 19.9 13C18.2 13 17 14.1 16.7 14.8V13.3H13.5V24H16.9V18.3C16.9 16.8 17.9 16 18.9 16C19.9 16 20.6 16.5 20.6 18.2V24Z"
+                                    fill="#FFF0D1" />
+                            </svg>
+                        </div>
+                        <!-- Button Text -->
+                        <span class="text-lb-md font-semibold">LinkedIn</span>
+                    </div>
+                </button>
+            </article>
+
+            <!-- Profile Card -->
+
+            <article
+                class="profile-card flex w-[220px] h-full min-h-[400px] px-4 py-8 gap-4 flex-col justify-between rounded-3xl border-2 border-primary bg-radial-primary shadow-md">
+                <!-- Image Container (Atas) -->
+                <figure class="image-container w-full flex justify-center p-2 items-center rounded-full bg-glass">
+                    <div class="w-[160px] h-[160px] rounded-full bg-gold"></div>
+                </figure>
+
+                <!-- Info Container (Tengah) -->
+                <div class="input-container flex flex-col items-center gap-2 w-full text-center flex-grow">
+                    <div class="flex justify-center items-center gap-2.5 border-b-2 border-secondary text-secondary">
+                        <h3 class="text-tl-sm font-bold">Ardiansyah</h3>
+                    </div>
+                    <h4 class="text-tl-sm">Tekom E</h4>
+                </div>
+
+                <!-- Button (Bawah) -->
+                <button type="submit"
+                    class="inline-flex h-12 px-6 justify-center items-center rounded-full bg-blackLayer-0 hover:bg-blackLayer-1 active:border-2 active:border-blackLayer-4 active:bg-blackLayer-0 transition-transform duration-300 ease-in-out hover:scale-90 active:scale-100">
+                    <div class="flex justify-center items-center gap-4 text-primary">
+                        <!-- Icon Left -->
+                        <div class="flex w-5 h-5 justify-center items-center">
+                            <!-- SVG Icon -->
+                            <svg width="32" height="32" viewBox="0 0 32 32" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path fill-rule="evenodd" clip-rule="evenodd"
+                                    d="M0 16C0 7.16344 7.16344 0 16 0C24.8366 0 32 7.16344 32 16C32 24.8366 24.8366 32 16 32C7.16344 32 0 24.8366 0 16ZM8.2 13.3V24H11.6V13.3H8.2ZM8 9.9C8 11 8.8 11.8 9.9 11.8C11 11.8 11.8 11 11.8 9.9C11.8 8.8 11 8 9.9 8C8.9 8 8 8.8 8 9.9ZM20.6 24H23.8V17.4C23.8 14.1 21.8 13 19.9 13C18.2 13 17 14.1 16.7 14.8V13.3H13.5V24H16.9V18.3C16.9 16.8 17.9 16 18.9 16C19.9 16 20.6 16.5 20.6 18.2V24Z"
+                                    fill="#FFF0D1" />
+                            </svg>
+                        </div>
+                        <!-- Button Text -->
+                        <span class="text-lb-md font-semibold">LinkedIn</span>
+                    </div>
+                </button>
+            </article>
+
+            <!-- Profile Card -->
+
+            <article
+                class="profile-card flex w-[220px] h-full min-h-[400px] px-4 py-8 gap-4 flex-col justify-between rounded-3xl border-2 border-primary bg-radial-primary shadow-md">
+                <!-- Image Container (Atas) -->
+                <figure class="image-container w-full flex justify-center p-2 items-center rounded-full bg-glass">
+                    <div class="w-[160px] h-[160px] rounded-full bg-gold"></div>
+                </figure>
+
+                <!-- Info Container (Tengah) -->
+                <div class="input-container flex flex-col items-center gap-2 w-full text-center flex-grow">
+                    <div class="flex justify-center items-center gap-2.5 border-b-2 border-secondary text-secondary">
+                        <h3 class="text-tl-sm font-bold">Ardiansyah</h3>
+                    </div>
+                    <h4 class="text-tl-sm">Tekom E</h4>
+                </div>
+
+                <!-- Button (Bawah) -->
+                <button type="submit"
+                    class="inline-flex h-12 px-6 justify-center items-center rounded-full bg-blackLayer-0 hover:bg-blackLayer-1 active:border-2 active:border-blackLayer-4 active:bg-blackLayer-0 transition-transform duration-300 ease-in-out hover:scale-90 active:scale-100">
+                    <div class="flex justify-center items-center gap-4 text-primary">
+                        <!-- Icon Left -->
+                        <div class="flex w-5 h-5 justify-center items-center">
+                            <!-- SVG Icon -->
+                            <svg width="32" height="32" viewBox="0 0 32 32" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path fill-rule="evenodd" clip-rule="evenodd"
+                                    d="M0 16C0 7.16344 7.16344 0 16 0C24.8366 0 32 7.16344 32 16C32 24.8366 24.8366 32 16 32C7.16344 32 0 24.8366 0 16ZM8.2 13.3V24H11.6V13.3H8.2ZM8 9.9C8 11 8.8 11.8 9.9 11.8C11 11.8 11.8 11 11.8 9.9C11.8 8.8 11 8 9.9 8C8.9 8 8 8.8 8 9.9ZM20.6 24H23.8V17.4C23.8 14.1 21.8 13 19.9 13C18.2 13 17 14.1 16.7 14.8V13.3H13.5V24H16.9V18.3C16.9 16.8 17.9 16 18.9 16C19.9 16 20.6 16.5 20.6 18.2V24Z"
+                                    fill="#FFF0D1" />
+                            </svg>
+                        </div>
+                        <!-- Button Text -->
+                        <span class="text-lb-md font-semibold">LinkedIn</span>
+                    </div>
+                </button>
+            </article>
+
+        </section>
+    </section>
+
+    <!-- profile End -->
+
+
+    <!-- Footer -->
+    <footer class="footer flex flex-col justify-center items-center self-stretch w-full py-2">
+        <!-- Main Section -->
+        <div
+            class="footer-main-section flex justify-between items-center flex-wrap pb-4 border-b-2 border-secondary w-full">
+            <!-- First Column -->
+            <section class="first-column flex justify-between items-center flex-grow h-[278px]">
+                <div
+                    class="column-content flex flex-col justify-center items-center gap-2 px-4 flex-grow self-stretch text-secondary text-lb-md font-bold">
+                    <a href="#" class="logo-text-container flex justify-center items-center gap-4">
+                        <!-- file SVG -->
+                        <svg xmlns="http://www.w3.org/2000/svg" width="49" height="48" viewBox="0 0 49 48" fill="none">
+                            <path
+                                d="M30.4654 26.1685L30.4654 26.1684C29.2676 24.9709 29.2676 23.0291 30.4654 21.8314L30.4654 21.8314L36.6149 
+                            15.6818L36.2614 15.3283L36.6149 15.6818C37.8125 14.4841 39.7545 14.4841 40.9521 15.6818L41.3056 15.3283L40.9521 15.6818L47.1018 21.8314C48.2994 23.0291 48.2994 24.9709 47.1018 26.1685L40.9521 32.3182C39.7545 33.5158 37.8125 33.5158 36.6149 32.3182L30.4654 26.1685ZM1.89826 26.1685L1.89825 26.1685C0.700591 24.9709 0.700576 23.0291 1.89825 21.8314L8.04784 15.6818L7.69428 15.3283L8.04784 15.6818C9.2455 14.4841 11.1873 14.4841 12.385 15.6818L12.7386 15.3283L12.385 15.6818L18.5346 21.8314C19.7323 23.0291 19.7322 24.9709 18.5346 26.1685L18.5346 26.1685L12.385 32.3182C11.1873 33.5158 9.24549 33.5158 8.04783 32.3182L1.89826 26.1685ZM22.3314 46.6016L22.3314 46.6016L16.1818 40.4521C14.9841 39.2545 14.9841 37.3126 16.1818 36.115L22.3314 29.9655L22.3314 29.9655C23.5291 28.7676 25.4708 28.7676 26.6687 29.9655L32.8182 36.115C34.0157 37.3125 34.0157 39.2545 32.8182 40.4521L26.6687 46.6016C25.4708 47.7995 23.5291 47.7994 22.3314 46.6016ZM26.6687 18.0346C25.4708 19.2323 23.5291 19.2323 22.3314 18.0346L16.1818 11.885C14.9841 10.6873 14.9841 8.74552 16.1818 7.54783L22.3314 1.39826C23.5291 0.200592 25.4708 0.200563 26.6687 1.39828L32.8182 7.54783C34.0158 8.74551 34.0158 10.6873 32.8181 11.885L26.6687 18.0346C26.6687 18.0346 26.6687 18.0346 26.6687 18.0346Z"
+                                stroke="black" />
+                            <path d="..." stroke="black" />
+                        </svg>
+                        <span class="text-secondary text-lb-md font-bold">SecureByte Edu</span>
+                    </a>
+                    <div class="logo-image bg-cover bg-center w-[220px] h-[200px]">
+                        <img src="component/img/Untitled__6_-removebg-preview.png" alt="">
+                    </div>
+                </div>
+                <!-- file SVG -->
+                <svg width="8" height="278" viewBox="0 0 8 278" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <rect width="8" height="278" fill="url(#paint0_linear_265_3172)" />
+                    <defs>
+                        <linearGradient id="paint0_linear_265_3172" x1="4" y1="0" x2="4" y2="278"
+                            gradientUnits="userSpaceOnUse">
+                            <stop stop-color="#66E9FF" />
+                            <stop offset="0.5" stop-color="#FFF9ED" stop-opacity="0.2" />
+                            <stop offset="1" stop-color="#66E9FF" />
+                        </linearGradient>
+                    </defs>
+                </svg>
+            </section>
+
+            <!-- Second Column -->
+            <section class="second-column flex justify-between items-center flex-grow h-[278px]">
+                <ul
+                    class="column-content flex flex-col justify-center items-center gap-6 px-4 flex-grow self-stretch text-secondary text-lb-md font-bold">
+                    <li><a href="#">MODUL</a></li>
+                    <li><a href="#">BERITA</a></li>
+                    <li><a href="#">UPDATE</a></li>
+                </ul>
+                <!-- file SVG -->
+                <svg width="8" height="278" viewBox="0 0 8 278" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <rect width="8" height="278" fill="url(#paint0_linear_265_3172)" />
+                    <defs>
+                        <linearGradient id="paint0_linear_265_3172" x1="4" y1="0" x2="4" y2="278"
+                            gradientUnits="userSpaceOnUse">
+                            <stop stop-color="#66E9FF" />
+                            <stop offset="0.5" stop-color="#FFF9ED" stop-opacity="0.2" />
+                            <stop offset="1" stop-color="#66E9FF" />
+                        </linearGradient>
+                    </defs>
+                </svg>
+            </section>
+
+            <!-- Third Column -->
+            <section class="third-column flex justify-between items-center flex-grow h-[278px]">
+                <ul
+                    class="column-content flex flex-col justify-center items-center gap-6 px-4 flex-grow self-stretch text-secondary text-lb-md font-bold">
+                    <li><a href="#">ABOUT</a></li>
+                    <li><a href="#">FAQ</a></li>
+                    <li><a href="#">SYARAT DAN KETENTUAN</a></li>
+                    <li><a href="#">KETENTUAN PRIVASI</a></li>
+                </ul>
+                <!-- file SVG -->
+                <svg width="8" height="278" viewBox="0 0 8 278" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <rect width="8" height="278" fill="url(#paint0_linear_265_3172)" />
+                    <defs>
+                        <linearGradient id="paint0_linear_265_3172" x1="4" y1="0" x2="4" y2="278"
+                            gradientUnits="userSpaceOnUse">
+                            <stop stop-color="#66E9FF" />
+                            <stop offset="0.5" stop-color="#FFF9ED" stop-opacity="0.2" />
+                            <stop offset="1" stop-color="#66E9FF" />
+                        </linearGradient>
+                    </defs>
+                </svg>
+            </section>
+
+            <!-- SOCIAL MEDIA -->
+            <section class="last-column flex flex-col justify-between items-center flex-grow gap-6 h-[278px]">
+                <h3 class="text-secondary text-tl-md font-semibold">SOCIALIZE WITH JTIK</h3>
+                <ul class="social-media-icon flex justify-between gap-6 items-center flex-wrap m-8">
+                    <!-- Social Media Button 1 -->
+                    <li>
+                        <button type="button" aria-label="Facebook" class="social-media">
+                            <!-- file SVG -->
+                            <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 32 32"
+                                fill="none">
+                                <path fill-rule="evenodd" clip-rule="evenodd"
+                                    d="M0 16C0 7.16344 7.16344 0 16 0C24.8366 0 32 7.16344 32 16C32 24.8366 24.8366 32 16 32C7.16344 32 0 24.8366 0 16ZM16 8C20.4 8 24 11.6 24 16C24 20 21.1 23.4 17.1 24V18.3H19L19.4 16H17.2V14.5C17.2 13.9 17.5 13.3 18.5 13.3H19.5V11.3C19.5 11.3 18.6 11.1 17.7 11.1C15.9 11.1 14.7 12.2 14.7 14.2V16H12.7V18.3H14.7V23.9C10.9 23.3 8 20 8 16C8 11.6 11.6 8 16 8Z"
+                                    fill="#092C4C" />
+                            </svg>
+                        </button>
+                    </li>
+                    <!-- Social Media Button 2 -->
+                    <li>
+                        <button type="button" aria-label="Twitter" class="social-media">
+                            <!-- file SVG -->
+                            <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 32 32"
+                                fill="none">
+                                <path fill-rule="evenodd" clip-rule="evenodd"
+                                    d="M0 16C0 7.16344 7.16344 0 16 0C24.8366 0 32 7.16344 32 16C32 24.8366 24.8366 32 16 32C7.16344 32 0 24.8366 0 16ZM22.1 11.5C22.8 11.4 23.4 11.3 24 11C23.6 11.7 23 12.3 22.3 12.7C22.5 17.4 19.1 22.5 13 22.5C11.2 22.5 9.5 21.9 8 21C9.7 21.2 11.5 20.7 12.7 19.8C11.2 19.8 10 18.8 9.6 17.5C10.1 17.6 10.6 17.5 11.1 17.4C9.6 17 8.5 15.6 8.5 14.1C9 14.3 9.5 14.5 10 14.5C8.6 13.5 8.1 11.6 9 10.1C10.7 12.1 13.1 13.4 15.8 13.5C15.3 11.5 16.9 9.5 19 9.5C19.9 9.5 20.8 9.9 21.4 10.5C22.2 10.3 22.9 10.1 23.5 9.7C23.3 10.5 22.8 11.1 22.1 11.5Z"
+                                    fill="#092C4C" />
+                            </svg>
+                        </button>
+                    </li>
+                    <!-- Social Media Button 3 -->
+                    <li>
+                        <button type="button" aria-label="Linkdn" class="social-media">
+                            <!-- file SVG -->
+                            <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 32 32"
+                                fill="none">
+                                <path fill-rule="evenodd" clip-rule="evenodd"
+                                    d="M0 16C0 7.16344 7.16344 0 16 0C24.8366 0 32 7.16344 32 16C32 24.8366 24.8366 32 16 32C7.16344 32 0 24.8366 0 16ZM8.2 13.3V24H11.6V13.3H8.2ZM8 9.9C8 11 8.8 11.8 9.9 11.8C11 11.8 11.8 11 11.8 9.9C11.8 8.8 11 8 9.9 8C8.9 8 8 8.8 8 9.9ZM20.6 24H23.8V17.4C23.8 14.1 21.8 13 19.9 13C18.2 13 17 14.1 16.7 14.8V13.3H13.5V24H16.9V18.3C16.9 16.8 17.9 16 18.9 16C19.9 16 20.6 16.5 20.6 18.2V24Z"
+                                    fill="#092C4C" />
+                            </svg>
+                        </button>
+                    </li>
+                    <!-- Social Media Button 4 -->
+                    <li>
+                        <button type="button" aria-label="Instagram" class="social-media">
+                            <!-- file SVG -->
+                            <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 32 32"
+                                fill="none">
+                                <path
+                                    d="M16 18.8C14.5 18.8 13.2 17.6 13.2 16C13.2 14.5 14.4 13.2 16 13.2C17.5 13.2 18.8 14.4 18.8 16C18.8 17.5 17.5 18.8 16 18.8Z"
+                                    fill="#092C4C" />
+                                <path fill-rule="evenodd" clip-rule="evenodd"
+                                    d="M19.4 9.2H12.6C11.8 9.3 11.4 9.4 11.1 9.5C10.7 9.6 10.4 9.8 10.1 10.1C9.86261 10.3374 9.75045 10.5748 9.61489 10.8617C9.57916 10.9373 9.5417 11.0166 9.5 11.1C9.48453 11.1464 9.46667 11.1952 9.44752 11.2475C9.34291 11.5333 9.2 11.9238 9.2 12.6V19.4C9.3 20.2 9.4 20.6 9.5 20.9C9.6 21.3 9.8 21.6 10.1 21.9C10.3374 22.1374 10.5748 22.2495 10.8617 22.3851C10.9374 22.4209 11.0165 22.4583 11.1 22.5C11.1464 22.5155 11.1952 22.5333 11.2475 22.5525C11.5333 22.6571 11.9238 22.8 12.6 22.8H19.4C20.2 22.7 20.6 22.6 20.9 22.5C21.3 22.4 21.6 22.2 21.9 21.9C22.1374 21.6626 22.2495 21.4252 22.3851 21.1383C22.4209 21.0626 22.4583 20.9835 22.5 20.9C22.5155 20.8536 22.5333 20.8048 22.5525 20.7525C22.6571 20.4667 22.8 20.0762 22.8 19.4V12.6C22.7 11.8 22.6 11.4 22.5 11.1C22.4 10.7 22.2 10.4 21.9 10.1C21.6626 9.86261 21.4252 9.75045 21.1383 9.61488C21.0627 9.57918 20.9833 9.54167 20.9 9.5C20.8536 9.48453 20.8048 9.46666 20.7525 9.44752C20.4667 9.3429 20.0762 9.2 19.4 9.2ZM16 11.7C13.6 11.7 11.7 13.6 11.7 16C11.7 18.4 13.6 20.3 16 20.3C18.4 20.3 20.3 18.4 20.3 16C20.3 13.6 18.4 11.7 16 11.7ZM21.4 11.6C21.4 12.1523 20.9523 12.6 20.4 12.6C19.8477 12.6 19.4 12.1523 19.4 11.6C19.4 11.0477 19.8477 10.6 20.4 10.6C20.9523 10.6 21.4 11.0477 21.4 11.6Z"
+                                    fill="#092C4C" />
+                                <path fill-rule="evenodd" clip-rule="evenodd"
+                                    d="M0 16C0 7.16344 7.16344 0 16 0C24.8366 0 32 7.16344 32 16C32 24.8366 24.8366 32 16 32C7.16344 32 0 24.8366 0 16ZM12.6 7.7H19.4C20.3 7.8 20.9 7.9 21.4 8.1C22 8.4 22.4 8.6 22.9 9.1C23.4 9.6 23.7 10.1 23.9 10.6C24.1 11.1 24.3 11.7 24.3 12.6V19.4C24.2 20.3 24.1 20.9 23.9 21.4C23.6 22 23.4 22.4 22.9 22.9C22.4 23.4 21.9 23.7 21.4 23.9C20.9 24.1 20.3 24.3 19.4 24.3H12.6C11.7 24.2 11.1 24.1 10.6 23.9C10 23.6 9.6 23.4 9.1 22.9C8.6 22.4 8.3 21.9 8.1 21.4C7.9 20.9 7.7 20.3 7.7 19.4V12.6C7.8 11.7 7.9 11.1 8.1 10.6C8.4 10 8.6 9.6 9.1 9.1C9.6 8.6 10.1 8.3 10.6 8.1C11.1 7.9 11.7 7.7 12.6 7.7Z"
+                                    fill="#092C4C" />
+                            </svg>
+                        </button>
+                    </li>
+                    <!-- Social Media Button 5 -->
+                    <li>
+                        <button type="button" aria-label="Youtube" class="social-media">
+                            <!-- file SVG -->
+                            <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 32 32"
+                                fill="none">
+                                <path d="M18.6 16L14.4 13.6V18.4L18.6 16Z" fill="#092C4C" />
+                                <path fill-rule="evenodd" clip-rule="evenodd"
+                                    d="M0 16C0 7.16344 7.16344 0 16 0C24.8366 0 32 7.16344 32 16C32 24.8366 24.8366 32 16 32C7.16344 32 0 24.8366 0 16ZM22.2 10.7C22.9 10.9 23.4 11.4 23.6 12.1C24 13.4 24 16 24 16C24 16 24 18.6 23.7 19.9C23.5 20.6 23 21.1 22.3 21.3C21 21.6 16 21.6 16 21.6C16 21.6 10.9 21.6 9.7 21.3C9 21.1 8.5 20.6 8.3 19.9C8 18.6 8 16 8 16C8 16 8 13.4 8.2 12.1C8.4 11.4 8.90001 10.9 9.60001 10.7C10.9 10.4 15.9 10.4 15.9 10.4C15.9 10.4 21 10.4 22.2 10.7Z"
+                                    fill="#092C4C" />
+                            </svg>
+                        </button>
+                    </li>
+                </ul>
+
+                <!-- Shape Button -->
+                <div class=" flex p-2.5 flex-col items-start rounded-[50px] bg-dark-glass ">
+                    <!-- Button Circle Secondary -->
+                    <button type="submit"
+                        class="inline-flex h-14 px-3 flex-col justify-center items-center flex-shrink-0 rounded-full bg-blackLayer-0 hover:bg-blackLayer-1 active:border-2 active:border-blackLayer-4 active:bg-blackLayer-0 transition-transform duration-300 ease-in-out hover:scale-90 active:scale-100">
+                        <div class="flex py-3.5 px-10 flex-col justify-center items-center gap-2.5 flex-grow">
+                            <div class="flex justify-center items-center gap-6 text-primary">
+
+                                <!-- Icon Left (Hidden by Default) -->
+                                <div class="flex w-6 h-6 justify-center items-center flex-shrink-0 hidden">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                                        fill="none">
+                                        <path d="M21 12L3 12" stroke="currentColor" stroke-linecap="round" />
+                                        <path d="M9 6L3 12L9 18" stroke="currentColor" stroke-linecap="round" />
+                                    </svg>
+                                </div>
+
+                                <!-- Text Container -->
+                                <span class="text-lb-sm font-semibold flex justify-center items-center">Create
+                                    Account</span>
+
+                                <!-- Icon Right (Hidden by Default) -->
+                                <div class="flex w-6 h-6 justify-center items-center flex-shrink-0 ">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                                        fill="none">
+                                        <path d="M3 12L21 12" stroke="currentColor" stroke-linecap="round" />
+                                        <path d="M15 18L21 12L15 6" stroke="currentColor" stroke-linecap="round" />
+                                    </svg>
+                                </div>
+                            </div>
+                        </div>
+                    </button>
+                </div>
+            </section>
+        </div>
+
+        <!-- Footer Bottom Section -->
+        <div class="footer-bottom-section flex justify-center items-center w-full py-4">
+            <h4 class="text-lb-md text-secondary">2023 © SecureByte Edu - BY KELOMPOK 4 - CYBERSECURITY</h4>
+        </div>
+    </footer>
+
+    <!-- Footer end -->
+</body>
+
+</html>
